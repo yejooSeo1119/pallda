@@ -77,7 +77,8 @@ small {
 }
 
 img {
-    width: 100%;
+    display: block;
+    border: 0;
 }
 
 button {
@@ -523,9 +524,11 @@ input[type="button"] {
     .lang-list {
         position: absolute;
         top: 100%;
-        transform: translateY(-2px);
+        transform: translateY(-1px);
         left: 0;
         width: 115px;
+        height: 0;
+        overflow: hidden;
         background-color: #000;
         border: 1px solid #fff;
         border-top: 0;
@@ -544,7 +547,10 @@ input[type="button"] {
         box-sizing: border-box;
         transition: background-color 0.2s ease, color 0.2s ease;
     }
-
+    .lang-btn:hover ul.lang-list{
+        height: 200px;
+        transition-duration: 1s;
+    }
     .heaberMobile {
         display: none;
     }
@@ -651,9 +657,11 @@ input[type="button"] {
     .lang-list {
         position: absolute;
         top: 100%;
-        transform: translateY(-2px);
+        transform: translateY(-1px);
         left: 0;
         width: 115px;
+        height: 0;
+        overflow: hidden;
         background-color: #000;
         border: 1px solid #fff;
         border-top: 0;
@@ -878,9 +886,11 @@ input[type="button"] {
     .lang-list {
         position: absolute;
         top: 100%;
-        transform: translateY(-2px);
+        transform: translateY(-1px);
         left: 0;
         width: 115px;
+        height: 0;
+        overflow: hidden;
         background-color: #000;
         border: 1px solid #fff;
         border-top: 0;
@@ -1009,17 +1019,22 @@ input[type="button"] {
 /*------------------------------------ main end ------------------------------------*/
 
 @media (min-width: 1200px) {
+    .mo-main{
+        display: none;
+    }
+    .main{
+        position: relative;
+    }
     .main .imgbox{
         width: 100%;
         height: 800px;
-        position: relative;
     }
     .main .itembox{
         position: absolute;
-        width: 1000px;
-        top: 48%;
-        left: 65%;
-        transform: translate(-50%,-50%);
+        top: 40%;
+        right: 10%;
+        color: #fff;
+        text-shadow:  0px 2px 5px rgba(0, 0, 0, 0.4);
     }
     .main .item1{
         text-align: right;
@@ -1029,11 +1044,38 @@ input[type="button"] {
     .main .item2{
         text-align: right;
         font-size: 30px;
-        line-height: 1.5em;
+        position: relative;
+    }
+    .main .iconbox{
+        position: absolute;
+        top: 0%;
+        right: 10%;
+        margin-top: 100px;
+    }
+    .iconbox{
+        display: block;
+        border: 1px solid #fff;
+        text-align: center;
+        box-shadow:  0px 0px 3px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        padding: 10px 30px;
+    }
+    .iconbox a, .iconbox .icon{
+        display: inline;
+        color: #fff;
+        text-shadow: none;
+        font-style: normal;
+    }
+    .iconbox .icon::before{
+        content: '\e913';
+        margin-right: 10px;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
+    .mo-main{
+        display: none;
+    }
     .main .imgbox{
         width: 100%;
         height: 400px;
@@ -1041,46 +1083,89 @@ input[type="button"] {
     }
     .main .itembox{
         position: absolute;
-        width: 700px;
-        top: 30%;
-        left: 65%;
-        transform: translate(-50%,-50%);
+        top: 40%;
+        right: 7%;
+        color: #fff;
+        text-shadow:  0px 2px 5px rgba(0, 0, 0, 0.4);
     }
     .main .item1{
         text-align: right;
-        font-size: 35px;
+        font-size: 40px;
         margin-bottom: 30px;
     }
     .main .item2{
         text-align: right;
-        font-size: 25px;
-        line-height: 1.5em;
+        font-size: 30px;
+        position: relative;
+    }
+    .main .iconbox{
+        position: absolute;
+        top: 0%;
+        right: 7%;
+        margin-top: 100px;
+    }
+    .iconbox{
+        display: block;
+        background-color: #fff;
+        border: 1px solid #ededed;
+        text-align: center;
+        box-shadow:  0px 0px 3px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        padding: 10px 30px;
+    }
+    .iconbox a, .iconbox .icon{
+        display: inline;
+        color: #767676;
+        text-shadow: none;
+        font-style: normal;
+    }
+    .iconbox .icon::before{
+        content: '\e913';
+        margin-right: 10px;
     }
 }
 
 
 @media (max-width: 991px){
-
-    .main .imgbox{
+    .main{
+        display: none;
+    }
+    .mo-main .imgbox{
         width: 100%;
-        height: 400px;
+        height: 900px;
         position: relative;
+        background: url(../iamges/mo_main_bg.jpg)center center no-repeat;
+        background-size: cover;
+        padding-top: 100px;
     }
-    .main .itembox{
+    .mo-main .imgbox a{
         position: absolute;
-        width: 700px;
-        top: 30%;
-        left: 65%;
+        top: 50%;
+        left: 50%;
         transform: translate(-50%,-50%);
+        width: 60%;
     }
-    .main .item1{
+    .mo-main .imgbox img{
+        width: 100%;
+    }
+    .mo-main .itembox{
+        position: absolute;
+        display: block;
+        bottom: 15%;
+        right: 2%;
+        z-index: 3;
+        transform: translateY(10px);
+        pointer-events: none;
+        color: #fff;
+        text-shadow:  0px 2px 5px rgba(0, 0, 0, 0.4);
+    }
+    .mo-main .item1{
         text-align: right;
-        font-size: 35px;
+        font-size: 30px;
         margin-bottom: 30px;
     }
-    .main .item2{
+    .mo-main .item2{
         text-align: right;
-        font-size: 25px;
-        line-height: 1.5em;
+        font-size: 20px;
     }
 }
