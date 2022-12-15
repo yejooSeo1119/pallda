@@ -1,10 +1,10 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $('.lang-wrap> .lang-btn >p').mouseenter(function(){
+    $('.lang-wrap> .lang-btn >p').mouseenter(function () {
         $(this).children('.lang-list').stop().slideDown();
     });
 
-    $('.lang-wrap> div.lang-btn').mouseleave(function(){
+    $('.lang-wrap> div.lang-btn').mouseleave(function () {
         $(this).children('.lang-list').stop().slideUp();
     });
 
@@ -13,9 +13,9 @@ $(document).ready(function(){
 
 
 // 모바일 메뉴
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $('.menuBtn > a.open').click(function(){
+    $('.menuBtn > a.open').click(function () {
 
         $('.menu-wrap').show(200);
 
@@ -23,7 +23,7 @@ $(document).ready(function(){
 
     });
 
-    $('.menu-box > div.close').click(function(){
+    $('.menu-box > div.close').click(function () {
 
         $('.menu-wrap').hide(200);
 
@@ -32,15 +32,15 @@ $(document).ready(function(){
     });
 
 });
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $('.menuBtn > a.open').click(function(){
+    $('.menuBtn > a.open').click(function () {
 
         $('.nav-bg ').show(0);
 
     });
 
-    $('.menu-box > div.close').click(function(){
+    $('.menu-box > div.close').click(function () {
 
         $('.nav-bg ').hide(0);
 
@@ -48,3 +48,5 @@ $(document).ready(function(){
     });
 
 });
+
+
