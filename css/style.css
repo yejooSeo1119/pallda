@@ -2341,11 +2341,12 @@ footer {
         max-width: 100%;
         width: 400px;
         margin: auto;
+        overflow: hidden;
     }
 
     .productList .itemListBox {
         max-width: 100%;
-        width: 400px;
+        width: 300px;
         margin: 0 auto;
         text-align: center;
         display: block;
@@ -2354,7 +2355,7 @@ footer {
 
     .productList .itemList {
         float: left;
-        width: 100%;
+        width: 300px;
         height: 100%;
         overflow: hidden;
         display: block;
