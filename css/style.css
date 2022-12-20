@@ -45,6 +45,7 @@ body {
     color: #191919;
     font-family: "Noto Sans KR", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "나눔 고딕", "Nanum Gothic", "돋움", Dotum, "굴림", Gulim, AppleGothic, Sans-serif;
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -191,6 +192,30 @@ button {
     margin: auto;
 }
 
+@media screen and (min-width: 1200px) {
+    .content {
+        max-width: 100%;
+        width: 1200px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1199px) {
+    .content {
+        max-width: 100%;
+        width: 700px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .content {
+        max-width: 100%;
+        width: 400px;
+        margin: auto;
+    }
+}
+
 .indent {
     text-indent: 1em;
     padding: 10px 0;
@@ -237,7 +262,8 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-input{
+
+input {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
     line-height: 1.5em;
@@ -245,6 +271,7 @@ input{
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 input::placeholder,
 textarea::placeholder {
     color: #999999;
@@ -324,6 +351,7 @@ select {
     border-radius: 3px;
     border-top: 1px solid #9a9a9a;
     border-left: 1px solid #ababab;
+    outline: 0;
 }
 
 textarea {
@@ -1383,7 +1411,7 @@ input[type="button"] {
     .mo-main .itembox {
         max-width: 100%;
         width: 750px;
-        height: 900px;
+        height: 700px;
         background: url(../iamges/mo_main01@3x.jpg) no-repeat;
         background-size: cover;
         position: relative;
@@ -1448,7 +1476,7 @@ input[type="button"] {
 
 
 /*------------------------------------ content start ------------------------------------*/
-.content {
+#index-wrap .content {
     width: 1200px;
     max-width: 100%;
     margin: auto;
@@ -1457,7 +1485,7 @@ input[type="button"] {
 
 @media screen and (min-width: 1200px) {
 
-    .content .textbox2 {
+    #index-wrap .content .textbox2 {
         color: #191919;
         text-align: center;
         font-size: 20px;
@@ -1466,12 +1494,12 @@ input[type="button"] {
         line-height: 2em;
     }
 
-    .content-inner>ul {
+    #index-wrap .content-inner>ul {
         float: left;
         width: 100%;
     }
 
-    .content-inner>ul>li {
+    #index-wrap .content-inner>ul>li {
         float: left;
         width: 32%;
         margin-right: 1.8%;
@@ -1479,7 +1507,7 @@ input[type="button"] {
         border-right: 1px solid #000;
     }
 
-    .content-inner ul li:nth-child(3) {
+    #index-wrap .content-inner ul li:nth-child(3) {
         margin-right: 0;
         border: 0;
     }
@@ -1549,11 +1577,11 @@ input[type="button"] {
 
 @media screen and (min-width: 751px) and (max-width: 1199px) {
 
-    .content {
+    #index-wrap .content {
         width: 1000px;
     }
 
-    .content .textbox2 {
+    #index-wrap .content .textbox2 {
         color: #191919;
         text-align: center;
         font-size: 20px;
@@ -1562,12 +1590,12 @@ input[type="button"] {
         line-height: 2em;
     }
 
-    .content-inner>ul {
+    #index-wrap .content-inner>ul {
         float: left;
         width: 100%;
     }
 
-    .content-inner>ul>li {
+    #index-wrap .content-inner>ul>li {
         float: left;
         width: 32%;
         margin-right: 1.8%;
@@ -1575,7 +1603,7 @@ input[type="button"] {
         border-right: 1px solid #000;
     }
 
-    .content-inner ul li:nth-child(3) {
+    #index-wrap .content-inner ul li:nth-child(3) {
         margin-right: 0;
         border: 0;
     }
@@ -1601,7 +1629,7 @@ input[type="button"] {
 
 @media screen and (max-width: 750px) {
 
-    .content .textbox2 {
+    #index-wrap .content .textbox2 {
         color: #191919;
         text-align: center;
         font-size: 20px;
@@ -1611,12 +1639,12 @@ input[type="button"] {
         max-width: 400px;
     }
 
-    .content-inner>ul {
+    #index-wrap .content-inner>ul {
         float: left;
         width: 100%;
     }
 
-    .content-inner>ul>li {
+    #index-wrap .content-inner>ul>li {
         float: left;
         width: 100%;
     }
@@ -1764,7 +1792,8 @@ footer {
 
 /*------------------------------------ about start ------------------------------------*/
 #about-wrap .content {
-    width: 100%;
+    max-width: 100%;
+    width: 1200px;
     margin: auto;
     overflow: hidden;
 }
@@ -1773,7 +1802,6 @@ footer {
     max-width: 100%;
     width: 300px;
     margin: auto;
-    text-align: center;
 }
 
 #about-wrap .content p {
@@ -1874,8 +1902,10 @@ footer {
 @media screen and (min-width: 751px) and (max-width: 1199px) {
     #about-wrap .itembox1 {
         position: relative;
-        width: 100%;
+        max-width: 100%;
+        width: 700px;
         height: 900px;
+        margin: auto;
     }
 
     #about-wrap .itembox1 .imgbox {
@@ -1905,9 +1935,10 @@ footer {
 
     #about-wrap .itembox2 {
         position: relative;
-        width: 100%;
+        max-width: 100%;
+        width: 700px;
         height: 900px;
-        display: block;
+        margin: auto;
         padding-top: 150px;
     }
 
@@ -1935,9 +1966,10 @@ footer {
 
     #about-wrap .itembox3 {
         position: relative;
-        width: 100%;
+        max-width: 100%;
+        width: 700px;
         height: 900px;
-        display: block;
+        margin: auto;
         padding-top: 150px;
     }
 
@@ -2038,14 +2070,454 @@ footer {
 
 
 
+/*------------------------------------ buyer start ------------------------------------*/
 
 
 
 
 
 
+.content h1 {
+    width: 300px;
+    margin: auto;
+}
+
+.productList button {
+    width: 100px;
+}
+
+.productList .itemListBox {
+    max-width: 100%;
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding: 20px;
+}
+
+.productList .itemList {
+    float: left;
+    width: 33.333%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.productList .itemList .imgbox {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+.productList .itemList .textbox {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.productList .itemList .textbox p {
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+}
+
+.productList .imgbox img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: auto;
+    transition: all 0.5s ease;
+}
+
+.productList .imgbox img:hover {
+    transform: scale(1.1);
+}
+
+.productList button {
+    background-color: transparent;
+    border: 1px solid #000;
+    transition: background-color 0.3s ease;
+}
+
+.productList button i.icon {
+    margin-right: 5px;
+}
+
+.productList button:hover {
+    background-color: #1b3745;
+    color: #fff;
+}
+
+/* paging */
+.content .paging {
+    max-width: 100%;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+}
+
+.paging p a {
+    padding: 5px 0 0 10px;
+    display: inline-block;
+}
+
+.paging p a i.icon {
+    width: 20px;
+    height: 20px;
+    color: #767676;
+    transition: color 0.3s ease;
+}
+
+.paging p,
+.paging ol,
+.paging ol li {
+    display: inline-block;
+    zoom: 1;
+    display: inline;
+    vertical-align: middle;
+}
+
+.paging ol li a.this {
+    color: #191919;
+    font-weight: 700;
+}
+
+.paging ol li a {
+    color: #767676;
+    padding: 5px 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.paging ol li a:hover,
+.paging p a i.icon:hover {
+    color: #000;
+}
+
+.paging .fisrt i.icon::after {
+    content: "\e93b";
+    margin-left: -7px;
+}
+
+.paging .last i.icon::after {
+    content: "\e93e";
+    margin-left: -7px;
+}
+
+@media screen and (min-width: 1200px) {
+    .productList .content {
+        max-width: 100%;
+        width: 1200px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1199px) {
+    .productList .content {
+        max-width: 100%;
+        width: 1200px;
+        margin: auto;
+    }
+
+    .productList .itemListBox {
+        max-width: 100%;
+        width: 700px;
+        overflow: hidden;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        padding: 20px;
+    }
+
+    .productList .itemList {
+        float: left;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        display: block;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .productList .content {
+        max-width: 100%;
+        width: 400px;
+        margin: auto;
+    }
+
+    .productList .itemListBox {
+        max-width: 100%;
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        padding: 20px;
+    }
+
+    .productList .itemList {
+        float: left;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: block;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+}
 
 
+
+/*------------------------------------ buyer end ------------------------------------*/
+
+
+
+
+/*------------------------------------ detail start ------------------------------------*/
+
+
+#detail-wrap .content {
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+
+#detail-wrap .content .itembox {
+    width: 100%;
+    overflow: hidden;
+}
+
+#detail-wrap .content .imgbox {
+    width: 50%;
+    float: left;
+    margin: auto;
+}
+
+#detail-wrap .content .textbox {
+    width: 50%;
+    max-width: 600px;
+    float: left;
+}
+
+#detail-wrap .textbox .item1,
+#detail-wrap .textbox .item2 {
+    height: 200px;
+}
+
+.textbox .item1 p,
+.textbox .item2 p {
+    max-height: 150px;
+}
+
+#detail-wrap .item2 .profile i {
+    background-color: #ededed;
+    padding: 15px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+/* 댓글 */
+.itembox2 {
+    background-color: #f9f9f9;
+    padding: 50px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.comment .comment-box {
+    margin-left: 46px;
+}
+
+.comment-item-reply {
+    padding-left: 46px;
+}
+
+.comment .comment-area {
+    position: relative;
+    padding: 12px 23px 10px 0;
+    border-bottom: 1px solid #ededed;
+}
+
+.comment .comment-text .nick {
+    margin-bottom: 4px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.comment .comment-text .nick span.type {
+    margin-right: 5px;
+}
+
+.comment .comment-text .text {
+    position: relative;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.comment .comment-text .text-view {
+    overflow: hidden;
+}
+
+.comment .comment-text .info {
+    margin-top: 7px;
+    color: #9a9a9a;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.comment .comment-text .info .info-date {
+    margin-right: 10px;
+}
+
+.comment .comment-text .info .info-button {
+    color: inherit;
+}
+
+.comment .comment-text .info .info-button:hover {
+    border-bottom: 1px solid #767676;
+}
+
+
+/* 댓글작성칸 */
+.writer {
+    margin: 12px 0 29px;
+    padding: 16px 10px 10px 18px;
+    border: 2px solid #ededed;
+}
+
+.writer .writer-box {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.writer .writer-box .nick {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.writer .writer-box textarea {
+    max-height: 500px;
+    resize: none;
+    box-sizing: border-box;
+    border: 0;
+    background-color: transparent;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.submitbtn {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.submitbtn a {
+    display: inline-block;
+    min-width: 46px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #999999;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: top;
+}
+
+/*------------------------------------ detail end ------------------------------------*/
+
+
+
+
+/*------------------------------------ upload start ------------------------------------*/
+.board {
+    max-width: 100%;
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    display: block;
+    padding: 0 10px;        
+    border-top: 2px solid #1b3745;
+    border-bottom: 2px solid #1b3745;
+}
+
+.board table {
+    max-width: 100%;
+    width: 1200px;
+    margin: auto;   
+    overflow: hidden; 
+    height: 100%;
+}
+
+.board select {
+    background-color: transparent;
+    border: 0;
+}
+
+.board select option {
+    text-align: left;
+}
+
+.selectbox {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.selectbox p.type {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    display: inline;
+}
+
+.selectbox select.boardType {
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 0;
+}
+
+.selectbox button.write {
+    width: 100px;
+    float: right;
+    margin-top: -10px;
+    background-color: transparent;
+    border: 1px solid #000;
+    transition: background-color 0.3s ease;
+}
+.selectbox button.write:hover{
+    background-color: #1b3745;
+    color: #fff;
+}
+.board table th {
+    text-align: center;
+    border-top: 1px solid #ededed;
+}
+
+.board table td {
+    border-bottom: 1px solid #ededed;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.boardList {
+    text-align: center;
+}
+
+
+/*------------------------------------ upload end ------------------------------------*/
 
 
 
@@ -2053,8 +2525,7 @@ footer {
 /*------------------------------------ user start ------------------------------------*/
 
 
-
-/*------------------------------------ login start ------------------------------------*/
+/*----------------------------- login start --------------------------*/
 .hidden {
     width: 1px;
     height: 1px;
@@ -2097,7 +2568,6 @@ footer {
 
 #loginForm {
     width: 300px;
-    max-width: 100%;
     margin: auto;
 }
 
@@ -2116,7 +2586,7 @@ footer {
 }
 
 #find {
-    width: 322px;
+    width: 300px;
     overflow: hidden;
 }
 
@@ -2129,7 +2599,7 @@ footer {
 }
 
 #login-wrap #btn {
-    width: 322px;
+    width: 300px;
     overflow: hidden;
     display: block;
     text-align: center;
@@ -2160,14 +2630,14 @@ footer {
 
 
 .findUser {
-    width: 600px;
+    width: 350px;
     max-width: 100%;
     margin: auto;
     overflow: hidden;
 }
 
 #find-wrap .findUser .tab ul {
-    width: 420px;
+    width: 350px;
     max-width: 100%;
     margin: auto;
     display: block;
@@ -2210,17 +2680,17 @@ footer {
 
 #find-wrap .findUser p {
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 #find-wrap .findUser .form {
-    width: 600px;
+    width: 340px;
     max-width: 100%;
     text-align: center;
 }
 
 .findUser .btn {
-    width: 420px;
+    width: 350px;
     max-width: 100%;
     overflow: hidden;
     display: block;
@@ -2228,6 +2698,7 @@ footer {
     border-radius: 3px;
     border: 1px solid #000;
     margin: auto;
+    margin-left: 4px;
 }
 
 .findUser .btn a {
@@ -2255,8 +2726,8 @@ footer {
 /*----------------------------------------- sign start-----------------------------------------*/
 
 .sign {
-    width: 100%;
-    max-width: 500px;
+    width: 600px;
+    max-width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 10px;
@@ -2264,29 +2735,30 @@ footer {
 
 .signtitle {
     font-size: 20px;
-    width: 100%;
+    width: 600px;
+    max-width: 100%;
     padding-bottom: 30px;
     border-bottom: 2px solid #1b3745;
 }
 
 .sign .type {
-    width: 100%;
-    max-width: 400px;
+    width: 600px;
+    max-width: 100%;
     margin: auto;
     table-layout: fixed;
     line-height: 180%;
 }
 
 /* tab */
-.sign .tab ul {
-    width: 100%;
-    max-width: 450px;
+.sign .tabbox .tab-tit {
+    width: 600px;
+    max-width: 100%;
     margin: auto;
     display: block;
     overflow: hidden;
 }
 
-.sign .tab ul li{
+.sign .tabbox .tab-tit li {
     float: left;
     width: 49%;
     margin-right: 1%;
@@ -2294,12 +2766,12 @@ footer {
     background-color: #ededed;
 }
 
-.sign .tab ul li.current a{
+.sign .tabbox .tab-tit li.on a {
     background-color: #1b3745;
     color: #fff;
 }
 
-.sign .tab ul li a{
+.sign .tabbox .tab-tit li a {
     font-size: 16px;
     line-height: 40px;
     height: 40px;
@@ -2309,22 +2781,27 @@ footer {
 
 
 /* tab-content */
-.content .tab-content{
-    width: 100%;
+.sign .content .cnt {
+    width: 600px;
+    max-width: 100%;
+    display: none;
 }
-.content .tab-content .current{
-	display: inherit;
+
+.sign .content .cnt.on {
+    display: block;
 }
-.write {
+
+.sign .write {
     box-sizing: border-box;
-    width: 100%;
-    max-width: 400px;
+    width: 600px;
+    max-width: 100%;
     margin: 0px auto;
 }
 
 table {
     border-spacing: 0;
-    width: 100%;
+    width: 600px;
+    max-width: 100%;
     box-sizing: border-box;
 }
 
@@ -2356,14 +2833,15 @@ table th {
     font-weight: normal;
     text-align: right;
     padding: 10px 3px 10px 0;
+    line-height: 50px;
 }
 
-.type table td {
+.type table td,
+.information table td {
     display: block;
     position: relative;
     width: auto;
-    padding: 10px 0;
-    width: 100%;
+    padding: 10px 0 10px 0;
     box-sizing: border-box;
     border: 1px solid transparent;
 }
@@ -2389,6 +2867,12 @@ table .radio label.right {
 
 .error {
     color: #b30000;
+    padding-top: 10px;
+    display: block;
+}
+
+.type input::placeholder {
+    font-size: 11.6px;
 }
 
 table .btn {
@@ -2408,22 +2892,30 @@ table .btn:hover {
 }
 
 
+
+
+
 /* agreement */
+
 .agreement {
-    width: 100%;
+    max-width: 100%;
+    width: 400px;
     margin: auto;
 }
 
 .agreement p {
     font-weight: 600;
 }
-.agreement p input{
+
+.agreement p input {
     width: 20px;
 }
+
 .agreement span {
-    width: 400px;
     max-width: 100%;
+    width: 400px;
     height: 200px;
+    margin: auto;
     overflow-y: scroll;
     border: 1px solid #ededed;
     display: block;
@@ -2466,6 +2958,7 @@ table .btn:hover {
 #informaition-wrap2 .sign-btn ul li:nth-child(3) {
     margin-right: 0%;
 }
+
 .sign-btn ul li a {
     display: block;
     font-size: 20px;
@@ -2498,5 +2991,29 @@ table .btn:hover {
     border-color: #1b3745;
     color: #191919 !important;
 }
+
+
+
+/*------------------------------------ information start
+-----------------------------------*/
+.information {
+    width: 400px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.information form {
+    width: 400px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.information span {
+    display: inline--block;
+}
+
+/*------------------------------------ information end
+-----------------------------------
+
 
 /*------------------------------------ user end ------------------------------------*/

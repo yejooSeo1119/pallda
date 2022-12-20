@@ -1,17 +1,325 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>PALLDA</title>
 </head>
-<body>
-    
 
-     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+<body>
+    <div class="wrap productList" id="buyer-wrap">
+        <header class="headerPc">
+            <!-- pcver. -->
+            <nav>
+                <div class="nav-box">
+                    <h1><a href="./index.html"><img src="./iamges/logo.svg" alt="logo"></a></h1>
+                    <ul class="nav">
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./buyer.html">BUYER</a></li>
+                        <li><a href="./seller.html">SELLER</a></li>
+                        <li><a href="./upload.html">UPLOAD</a></li>
+                        <li><a href="./news.html">NEWS</a></li>
+                    </ul>
+                    <!-- main nav -->
+                    <ul class="user">
+                        <li><a href="./user/login.html" class="login">Sign In</a></li>
+                        <li><a href="./user/sign.html" class="join">Sign Up</a></li>
+                    </ul>
+                    <div class="lang-box">
+                        <div class="lang-wrap">
+                            <div class="lang-btn">
+                                <p><span>KOR</span></p>
+                                <i class="icon xi-angle-down xi-1x"></i>
+                            </div>
+                            <!-- lang btn -->
+                            <ul class="lang-list">
+                                <li><a href="./index.html">KOR</a></li>
+                                <li><a href="./eng/index.html">ENG</a></li>
+                            </ul>
+                        </div>
+                        <!-- 언어선택 -->
+                    </div>
+                    <!-- lang-box -->
+                </div>
+                <!-- nav-box pc-->
+            </nav>
+        </header>
+        <!-- header -->
+        <header class="heaberMobile">
+            <nav>
+                <div class="nav-box">
+                    <h1><a href="./index.html"><img src="./iamges/logo.svg" alt="logo"></a></h1>
+                    <!-- 로고 -->
+                    <div class="lang-box">
+                        <div class="lang-wrap">
+                            <div class="lang-btn">
+                                <p><span>KOR</span></p>
+                                <i class="icon xi-angle-down"></i>
+                            </div>
+                            <!-- lang btn -->
+                            <ul class="lang-list">
+                                <li><a href="./index.html">KOR</a></li>
+                                <li><a href="./eng/index.html">ENG</a></li>
+                            </ul>
+                        </div>
+                        <!-- 언어선택 -->
+                    </div>
+                    <!-- lang-box -->
+                    <div class="menuBtn">
+                        <a href="#" class="open"><i class="icon xi-bars xi-3x "></i></a>
+                    </div>
+                    <!-- menuBtn -->
+                    <div class="menu-wrap active">
+                        <div class="menu-box">
+                            <div class="close"><i class="icon xi-close xi-3x "></i></div>
+                            <ul class="gnb">
+                                <li><a href="./about.html"><span>ABOUT</span></a></li>
+                                <li><a href="./buyer.html"><span>BUYER</span></a></li>
+                                <li><a href="./seller.html"><span>SELLER</span></a></li>
+                                <li><a href="./upload.html"><span>UPLOAD</span></a></li>
+                                <li><a href="./news.html"><span>NEWS</span></a></li>
+                            </ul>
+                            <ul class="mo-login">
+                                <li><a href="./user/login.html">Sign Up</a></li>
+                                <li><a href="./user/sign.html">Sign Up</a></li>
+                            </ul>
+                        </div>
+                        <!-- menu-box -->
+                    </div>
+                    <!-- menu-wrap -->
+                </div>
+                <!-- nav-box mobile -->
+                <div class="nav-bg active"></div>
+            </nav>
+        </header>
+        <!-- header -->
+        <div class="content">
+            <div class="mt50"></div>
+            <h1><img src="./iamges/title_buyer.jpg" alt="buyer title"></h1>
+            <div class="mt50"></div>
+            <div>
+                <ul class="itemListBox">
+                    <li class="itemList" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="imgbox" onclick="location.href='./detail.html'" style="cursor: pointer;">
+                            <img src="./iamges/mo_about01@3x.jpg" alt="상품이미지">
+                        </div>
+                        <!-- imgbox -->
+                        <div class="mt50"></div>
+                        <div class="textbox">
+                            <h6 onclick="location.href='./detail.html'" style="cursor: pointer;">상품명</h6>
+                            <div class="mt30"></div>
+                            <p>상품설명</p>
+                            <div class="mt30"></div>
+                            <button onclick="location.href='./detail.html'"><i class="icon xi-plus"></i>MORE</button>
+                        </div>
+                        <!-- textbox -->
+                    </li>
+                    <!-- itemList1 -->
+                    <li class="itemList" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="imgbox" onclick="location.href='./detail.html'" style="cursor: pointer;">
+                            <img src="./iamges/mo_about01@3x.jpg" alt="상품이미지">
+                        </div>
+                        <!-- imgbox -->
+                        <div class="mt50"></div>
+                        <div class="textbox">
+                            <h6 onclick="location.href='./detail.html'" style="cursor: pointer;">상품명</h6>
+                            <div class="mt30"></div>
+                            <p>상품설명</p>
+                            <div class="mt30"></div>
+                            <button onclick="location.href='./detail.html'"><i class="icon xi-plus"></i>MORE</button>
+                        </div>
+                        <!-- textbox -->
+                    </li>
+                    <!-- itemList2 -->
+                    <li class="itemList" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="imgbox" onclick="location.href='./detail.html'" style="cursor: pointer;">
+                            <img src="./iamges/mo_about01@3x.jpg" alt="상품이미지">
+                        </div>
+                        <!-- imgbox -->
+                        <div class="mt50"></div>
+                        <div class="textbox">
+                            <h6 onclick="location.href='./detail.html'" style="cursor: pointer;">상품명</h6>
+                            <div class="mt30"></div>
+                            <p>상품설명</p>
+                            <div class="mt30"></div>
+                            <button onclick="location.href='./detail.html'"><i class="icon xi-plus"></i>MORE</button>
+                        </div>
+                        <!-- textbox -->
+                    </li>
+                    <!-- itemList3 -->
+                    <li class="itemList" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="imgbox" onclick="location.href='./detail.html'" style="cursor: pointer;">
+                            <img src="./iamges/mo_about01@3x.jpg" alt="상품이미지">
+                        </div>
+                        <!-- imgbox -->
+                        <div class="mt50"></div>
+                        <div class="textbox">
+                            <h6 onclick="location.href='./detail.html'" style="cursor: pointer;">상품명</h6>
+                            <div class="mt30"></div>
+                            <p>상품설명</p>
+                            <div class="mt30"></div>
+                            <button onclick="location.href='./detail.html'"><i class="icon xi-plus"></i>MORE</button>
+                        </div>
+                        <!-- textbox -->
+                    </li>
+                    <!-- itemList4 -->
+                    <li class="itemList" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="imgbox">
+                            <img src="./iamges/mo_about01@3x.jpg" alt="상품이미지">
+                        </div>
+                        <!-- imgbox -->
+                        <div class="mt50"></div>
+                        <div class="textbox">
+                            <h6 onclick="location.href='./detail.html'" style="cursor: pointer;">상품명</h6>
+                            <div class="mt30"></div>
+                            <p>상품설명</p>
+                            <div class="mt30"></div>
+                            <button onclick="location.href='./detail.html'"><i class="icon xi-plus"></i>MORE</button>
+                        </div>
+                        <!-- textbox -->
+                    </li>
+                    <!-- itemList5 -->
+                    <li class="itemList" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="imgbox" onclick="location.href='./detail.html'" style="cursor: pointer;">
+                            <img src="./iamges/mo_about01@3x.jpg" alt="상품이미지">
+                        </div>
+                        <!-- imgbox -->
+                        <div class="mt50"></div>
+                        <div class="textbox">
+                            <h6 onclick="location.href='./detail.html'" style="cursor: pointer;">상품명</h6>
+                            <div class="mt30"></div>
+                            <p>상품설명</p>
+                            <div class="mt30"></div>
+                            <button onclick="location.href='./detail.html'"><i class="icon xi-plus"></i>MORE</button>
+                        </div>
+                        <!-- textbox -->
+                    </li>
+                    <!-- itemList6 -->
+                    <li class="itemList" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="imgbox" onclick="location.href='./detail.html'" style="cursor: pointer;">
+                            <img src="./iamges/mo_about01@3x.jpg" alt="상품이미지">
+                        </div>
+                        <!-- imgbox -->
+                        <div class="mt50"></div>
+                        <div class="textbox">
+                            <h6 onclick="location.href='./detail.html'" style="cursor: pointer;">상품명</h6>
+                            <div class="mt30"></div>
+                            <p>상품설명</p>
+                            <div class="mt30"></div>
+                            <button onclick="location.href='./detail.html'"><i class="icon xi-plus"></i>MORE</button>
+                        </div>
+                        <!-- textbox -->
+                    </li>
+                    <!-- itemList7 -->
+                    <li class="itemList" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="imgbox" onclick="location.href='./detail.html'" style="cursor: pointer;">
+                            <img src="./iamges/mo_about01@3x.jpg" alt="상품이미지">
+                        </div>
+                        <!-- imgbox -->
+                        <div class="mt50"></div>
+                        <div class="textbox">
+                            <h6 onclick="location.href='./detail.html'" style="cursor: pointer;">상품명</h6>
+                            <div class="mt30"></div>
+                            <p>상품설명</p>
+                            <div class="mt30"></div>
+                            <button onclick="location.href='./detail.html'"><i class="icon xi-plus"></i>MORE</button>
+                        </div>
+                        <!-- textbox -->
+                    </li>
+                    <!-- itemList8 -->
+                    <li class="itemList" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="imgbox" onclick="location.href='./detail.html'" style="cursor: pointer;">
+                            <img src="./iamges/mo_about01@3x.jpg" alt="상품이미지">
+                        </div>
+                        <!-- imgbox -->
+                        <div class="mt50"></div>
+                        <div class="textbox">
+                            <h6 onclick="location.href='./detail.html'" style="cursor: pointer;">상품명</h6>
+                            <div class="mt30"></div>
+                            <p>상품설명</p>
+                            <div class="mt30"></div>
+                            <button onclick="location.href='./detail.html'"><i class="icon xi-plus"></i>MORE</button>
+                        </div>
+                        <!-- textbox -->
+                    </li>
+                    <!-- itemList9 -->
+                </ul>
+            </div>
+            <!-- itembox -->
+            <div class="mt50"></div>
+            <div class="paging">
+                <p>
+                    <a href="#none" class="fisrt"><i class="icon xi-angle-left"></i></a>
+                    <a href="#none"><i class="icon xi-angle-left"></i></a>
+                </p>
+                <ol>
+                    <li><a href="buyer.html" class="this">1</a></li>
+                    <li><a href="#" class="other">2</a></li>
+                    <li><a href="#" class="other">3</a></li>
+                    <li><a href="#" class="other">4</a></li>
+                </ol>
+                <p>
+                    <a href="#none" style="padding: 5px 0 0 5px;"><i class="icon xi-angle-right"></i></a>
+                    <a href="#none" class="last"><i class="icon xi-angle-right"></i></a>
+                </p>
+            </div>
+            <!-- paging -->
+        </div>
+        <!-- content -->
+        <div class="mt150"></div>
+        <footer class="clearfix">
+            <div class="footer-inner">
+                <div class="mt30"></div>
+                <div class="foot-inner1">
+                    <ul>
+                        <li>E-mail.</li>
+                        <li>palldaofficial@gmail.com</li>
+                    </ul>
+                    <ul>
+                        <li>Address.</li>
+                        <li>45, Centurm dong-ro, Haeundae-gu, Busan, Republic of Korea</li>
+                    </ul>
+                    <ul>
+                        <li>Tel.</li>
+                        <li>82+10 - 4690 - 6316</li>
+                    </ul>
+                </div>
+                <!-- foot-inner1 -->
+                <div class="foot-inner2">
+                    <h1><img src="./iamges/logo.svg" alt="logo"></h1>
+                </div>
+                <!-- foot-inner2 -->
+            </div>
+            <!-- footer-inner -->
+            <div class="mt30"></div>
+        </footer>
+        <!-- footer -->
+    </div>
+    <!-- wrap -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        AOS.init({
+            offset: 120,
+            delay: 0,
+            duration: 400,
+            easing: 'ease',
+            once: false,
+            mirror: false,
+            anchorPlacement: 'top-bottom'
+        });
+    </script>
 </body>
+
 </html>

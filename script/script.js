@@ -32,6 +32,7 @@ $(document).ready(function () {
     });
 
 });
+
 $(document).ready(function () {
 
     $('.menuBtn > a.open').click(function () {
@@ -64,4 +65,18 @@ $(document).ready(function () {
     });
 
 });
+
+
+
+
+//sign, upload tab
+$(function() {
+    $('ul.tab-tit li').click(function() {
+      var onTab = $(this).attr('data-tab');
+      $('ul.tab-tit li').removeClass('on');
+      $('.cnt').removeClass('on');
+      $(this).addClass('on');
+      $('#' + onTab).addClass('on');
+    })
+  });
 
