@@ -114,7 +114,7 @@ small {
 
     strong {
         font-size: 20px;
-        font-weight: 400;
+        font-weight: 500;
     }
 
     small {
@@ -355,8 +355,6 @@ select {
 }
 
 textarea {
-    padding: 20px;
-    font-size: 14px;
     line-height: 1.7;
     border-radius: 5px;
     border: 1px solid #dbdbdb;
@@ -364,6 +362,8 @@ textarea {
     border-top: 1px solid #ededed;
     border-left: 1px solid #ededed;
     outline: 0;
+    resize: none;
+    max-height: 500px;
 }
 
 button,
@@ -940,8 +940,8 @@ input[type="button"] {
     .menu-wrap {
         position: absolute;
         top: 0;
-        right: 0;
-        width: 300px;
+        right: -3%;
+        width: 400px;
         height: calc(100vh - 1px);
         overflow-y: auto;
         display: none;
@@ -1045,7 +1045,7 @@ input[type="button"] {
         max-width: 100%;
         width: 1200px;
         margin: auto;
-        height: 50px;
+        height: 70px;
         background-color: #000;
         position: relative;
         top: 0;
@@ -1055,12 +1055,11 @@ input[type="button"] {
     }
 
     .heaberMobile nav {
-        width: 100%;
+        width: 97%;
         height: 50px;
         margin: auto;
         box-sizing: border-box;
         position: relative;
-        padding-top: 30px;
     }
 
     .heaberMobile nav h1 {
@@ -1070,7 +1069,7 @@ input[type="button"] {
         top: 0%;
         left: 2%;
         transform: translateY(-50%, -50%);
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .heaberMobile nav h1 img {
@@ -1080,8 +1079,8 @@ input[type="button"] {
     .lang-box {
         position: absolute;
         z-index: 4;
-        right: 10%;
-        top: 10px;
+        right: 13%;
+        top: 20px;
     }
 
     .lang-wrap {
@@ -1129,7 +1128,7 @@ input[type="button"] {
     .lang-btn i.icon {
         position: absolute;
         top: 50%;
-        right: 10px;
+        right: 1px;
         transform: translateY(-50%);
     }
 
@@ -1167,7 +1166,7 @@ input[type="button"] {
     /* menubox */
     .menuBtn {
         position: absolute;
-        top: 13px;
+        top: 25px;
         right: 4%;
     }
 
@@ -1184,8 +1183,8 @@ input[type="button"] {
     .menu-wrap {
         position: absolute;
         top: 0;
-        right: 0;
-        width: 100%;
+        right: -3%;
+        width: 106%;
         height: calc(100vh - 1px);
         overflow: hidden;
         display: none;
@@ -1777,11 +1776,103 @@ footer {
         left: 5%;
         position: absolute;
     }
+
+    .foot-inner1 ul li:nth-child(1)::after {
+        background-color: #fff;
+        display: inline-block;
+        content: '';
+        width: 0px;
+        height: 12px;
+        margin: 0 10px;
+    }
 }
 
 
 /*------------------------------------ footer end ------------------------------------*/
 
+/* topbtn */
+
+.topbtn {
+    z-index: 999;
+}
+
+@media screen and (min-width: 1200px) {
+    .topbtn {
+        position: fixed;
+        bottom: 2%;
+        right: 1%;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        border: 1px solid #000;
+        box-shadow: 0px 1px 3px #767676;
+    }
+
+    .topbtn i.icon {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .topbtn span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1199px) {
+    .topbtn {
+        position: fixed;
+        bottom: 2%;
+        right: 1%;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        border: 1px solid #000;
+        box-shadow: 0px 1px 3px #767676;
+    }
+
+    .topbtn i.icon {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .topbtn span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .topbtn {
+        position: fixed;
+        bottom: 1%;
+        right: 1%;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border: 1px solid #000;
+        box-shadow: 0px 1px 3px #767676;
+    }
+
+    .topbtn i.icon {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .topbtn span {
+        display: none;
+    }
+}
 
 /*------------------------------------ index end ------------------------------------*/
 
@@ -2282,45 +2373,93 @@ footer {
 /*------------------------------------ detail start ------------------------------------*/
 
 
-#detail-wrap .content {
-    width: 1200px;
-    max-width: 100%;
-    margin: auto;
+
+@media screen and (min-width: 1200px) {
+
+    #detail-wrap .content .itembox {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #detail-wrap .content .imgbox {
+        width: 50%;
+        float: left;
+        margin: auto;
+    }
+
+    #detail-wrap .content .textbox {
+        width: 50%;
+        max-width: 600px;
+        float: left;
+    }
+
+    #detail-wrap .textbox .item1,
+    #detail-wrap .textbox .item2 {
+        height: 200px;
+    }
+
+    .textbox .item1 p,
+    .textbox .item2 p {
+        max-height: 150px;
+    }
+
+    #detail-wrap .item2 .profile i {
+        background-color: #ededed;
+        padding: 15px;
+        display: inline-block;
+        box-sizing: border-box;
+        border-radius: 50px;
+    }
 }
 
-#detail-wrap .content .itembox {
-    width: 100%;
-    overflow: hidden;
+@media screen and (min-width: 751px) and (max-width: 1199px) {
+    #detail-wrap .content .imgbox {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    #detail-wrap .content .textbox {
+        width: 50%;
+        margin: auto;
+    }
+
+    #detail-wrap .textbox .item1,
+    #detail-wrap .textbox .item2 {
+        width: 100%;
+        max-height: 150px;
+    }
+
+    .textbox .item1 p,
+    .textbox .item2 p {
+        width: 100%;
+        max-height: 150px;
+    }
 }
 
-#detail-wrap .content .imgbox {
-    width: 50%;
-    float: left;
-    margin: auto;
-}
+@media screen and (max-width: 750px) {
+    #detail-wrap .content .imgbox {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
 
-#detail-wrap .content .textbox {
-    width: 50%;
-    max-width: 600px;
-    float: left;
-}
+    #detail-wrap .content .textbox {
+        width: 100%;
+        margin: auto;
+    }
 
-#detail-wrap .textbox .item1,
-#detail-wrap .textbox .item2 {
-    height: 200px;
-}
+    #detail-wrap .textbox .item1,
+    #detail-wrap .textbox .item2 {
+        width: 100%;
+        max-height: 150px;
+    }
 
-.textbox .item1 p,
-.textbox .item2 p {
-    max-height: 150px;
-}
-
-#detail-wrap .item2 .profile i {
-    background-color: #ededed;
-    padding: 15px;
-    display: inline-block;
-    box-sizing: border-box;
-    border-radius: 50px;
+    .textbox .item1 p,
+    .textbox .item2 p {
+        width: 100%;
+        max-height: 150px;
+    }
 }
 
 /* 댓글 */
@@ -2389,24 +2528,24 @@ footer {
 
 
 /* 댓글작성칸 */
-.writer {
+.itembox2 .writer {
     margin: 12px 0 29px;
     padding: 16px 10px 10px 18px;
     border: 2px solid #ededed;
 }
 
-.writer .writer-box {
+.itembox2 .writer .writer-box {
     position: relative;
     margin-bottom: 10px;
 }
 
-.writer .writer-box .nick {
+.itembox2 .writer-box .nick {
     display: block;
     margin-bottom: 10px;
     font-weight: 500;
 }
 
-.writer .writer-box textarea {
+.itembox2 .writer .writer-box textarea {
     max-height: 500px;
     resize: none;
     box-sizing: border-box;
@@ -2416,12 +2555,12 @@ footer {
     overflow: hidden;
 }
 
-.submitbtn {
+.itembox2 .submitbtn {
     text-align: right;
     padding-top: 10px;
 }
 
-.submitbtn a {
+.itembox2 .submitbtn a {
     display: inline-block;
     min-width: 46px;
     height: 34px;
@@ -2447,7 +2586,7 @@ footer {
     margin: auto;
     overflow: hidden;
     display: block;
-    padding: 0 10px;        
+    padding: 0 10px;
     border-top: 2px solid #1b3745;
     border-bottom: 2px solid #1b3745;
 }
@@ -2455,8 +2594,8 @@ footer {
 .board table {
     max-width: 100%;
     width: 1200px;
-    margin: auto;   
-    overflow: hidden; 
+    margin: auto;
+    overflow: hidden;
     height: 100%;
 }
 
@@ -2497,10 +2636,12 @@ footer {
     border: 1px solid #000;
     transition: background-color 0.3s ease;
 }
-.selectbox button.write:hover{
+
+.selectbox button.write:hover {
     background-color: #1b3745;
     color: #fff;
 }
+
 .board table th {
     text-align: center;
     border-top: 1px solid #ededed;
@@ -2518,6 +2659,157 @@ footer {
 
 
 /*------------------------------------ upload end ------------------------------------*/
+
+
+
+
+
+/*------------------------------------ upload-inner start ------------------------------------*/
+
+
+#upload-inner-wrap .content .upload-inner .title {
+    text-align: left;
+}
+
+.upload-inner strong.label {
+    font-size: 16px;
+    display: inline-block;
+    width: 60px;
+}
+
+.upload-inner .info p,
+.upload-inner .title {
+    border-bottom: 1px solid #ededed;
+    padding: 8px 0;
+}
+
+.upload-inner {
+    border-top: 2px solid #ededed;
+    border-bottom: 2px solid #ededed;
+    padding: 0 10px;
+}
+
+.itembox {
+    width: 1200px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+}
+
+#upload-inner-wrap .content button {
+    width: 80px;
+    position: relative;
+}
+
+#upload-inner-wrap .content button i::after {
+    content: "\eb1f";
+    padding-right: 40px;
+}
+
+#upload-inner-wrap .content button span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 15px;
+    transform: translate(-30%, -57%);
+}
+
+/*------------------------------------ upload-inner end ------------------------------------*/
+
+
+
+
+/*------------------------------------ upload-write start ------------------------------------*/
+#upload-wirte-wrap .itembox {
+    max-width: 100%;
+    width: 600px;
+    margin: auto;
+}
+
+.writebox td {
+    padding-left: 20px;
+}
+
+.writebox .checkbox label {
+    padding-right: 15px;
+}
+
+textarea.uploadCont {
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.filebox .uploadName {
+    display: inline-block;
+    font-size: 14px;
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    border-top: 1px solid #ededed;
+    border-left: 1px solid #ededed;
+    outline: 0;
+    padding: 0 10px;
+    color: #767676;
+}
+
+.filebox label {
+    display: inline-block;
+    border: 1px solid #000;
+    vertical-align: middle;
+    background: transparent;
+    cursor: pointer;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+/* 기존 디자인 삭제 */
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+.fileList{
+    padding: 10px;
+    max-height: 200px;
+}
+@media screen and (max-width: 750px) {
+    .filebox .uploadName {
+        display: inline-block;
+        font-size: 14px;
+        height: 44px;
+        line-height: 44px;
+        border: 1px solid #dbdbdb;
+        border-radius: 3px;
+        border-top: 1px solid #ededed;
+        border-left: 1px solid #ededed;
+        outline: 0;
+        padding: 0 10px;
+        color: #767676;
+        width: 156px;
+    }
+}
+
+button.writeSumbit {
+    width: 100px;
+    float: right;
+    border: 1px solid #000;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+button.writeSumbit:hover {
+    background-color: #1b3745;
+    color: #fff;
+}
+
+/*------------------------------------ upload-write end ------------------------------------*/
 
 
 
@@ -2766,9 +3058,10 @@ footer {
     background-color: #ededed;
 }
 
-.sign .tabbox .tab-tit li.on a {
+.sign .tabbox .tab-tit li a.on {
     background-color: #1b3745;
     color: #fff;
+    display: block;
 }
 
 .sign .tabbox .tab-tit li a {
@@ -2781,13 +3074,13 @@ footer {
 
 
 /* tab-content */
-.sign .content .cnt {
+.sign .type .cnt {
     width: 600px;
     max-width: 100%;
     display: none;
 }
 
-.sign .content .cnt.on {
+.sign .type .cnt.on {
     display: block;
 }
 
@@ -2846,11 +3139,6 @@ table th {
     border: 1px solid transparent;
 }
 
-textarea {
-    overflow-y: scroll;
-    resize: none;
-}
-
 table .radio {
     position: relative;
     display: inline-block;
@@ -2867,7 +3155,6 @@ table .radio label.right {
 
 .error {
     color: #b30000;
-    padding-top: 10px;
     display: block;
 }
 

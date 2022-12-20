@@ -71,12 +71,12 @@ $(document).ready(function () {
 
 //sign, upload tab
 $(function() {
-    $('ul.tab-tit li').click(function() {
+    $('ul.tab-tit li a').click(function() {
       var onTab = $(this).attr('data-tab');
-      $('ul.tab-tit li').removeClass('on');
-      $('.cnt').removeClass('on');
+      $('ul.tab-tit li a').removeClass('on');
+      $('.type .cnt').removeClass('on');
       $(this).addClass('on');
       $('#' + onTab).addClass('on');
-    })
+    });
   });
 
