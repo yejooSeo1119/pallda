@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/xeicon.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>PALLDA</title>
 </head>
+
 <body>
-    <div class="wrap" id="upload-wirte-wrap">
+    <div class="wrap" id="news-wrap">
         <header class="headerPc">
             <!-- pcver. -->
             <nav>
@@ -99,6 +101,106 @@
             </nav>
         </header>
         <!-- header -->
+        <div class="content">
+            <div class="mt50"></div>
+            <h1><img src="./iamges/title_news.jpg" alt="news title"></h1>
+            <div class="mt50"></div>
+            <div class="contbox">
+                <ul class="item">
+                    <li class="itemList" data-aos="fade-right">
+                        <div class="imgbox">
+                            <span style="background: url(./iamges/about01.jpg);"></span>
+                        </div>
+                        <!-- imgbox -->
+                        <div class="textbox">
+                            <div class="newsTitle">뉴스타이틀</div>
+                            <div class="mt20"></div>
+                            <div class="cont">
+                                <p>
+                                뉴스 내용 <br>뉴스 내용 <br>뉴스 내용
+                            </p>
+                            </div>
+                            <button><i class="icon xi-plus"></i><span>MORE</span></button>
+                        </div>
+                        <!-- textbox -->
+                    </li>
+                    <!-- itemList1 -->
+                    <li class="itemList" data-aos="fade-left">
+                        <div class="imgbox">
+                            <span style="background: url(./iamges/about01.jpg);"></span>
+                        </div>
+                        <!-- imgbox -->
+                        <div class="textbox">
+                            <div class="newsTitle">뉴스타이틀</div>
+                            <div class="mt20"></div>
+                            <div class="cont">
+                                뉴스 내용 <br>뉴스 내용 <br>뉴스 내용
+                            </div>
+                            <button><i class="icon xi-plus"></i><span>MORE</span></button>
+                        </div>
+                        <!-- textbox -->
+                    </li>
+                    <!-- itemList2 -->
+                    <li class="itemList" data-aos="fade-right">
+                        <div class="imgbox">
+                            <span style="background: url(./iamges/about01.jpg);"></span>
+                        </div>
+                        <!-- imgbox -->
+                        <div class="textbox">
+                            <div class="newsTitle">뉴스타이틀</div>
+                            <div class="mt20"></div>
+                            <div class="cont">
+                                <p>
+                                뉴스 내용 <br>뉴스 내용 <br>뉴스 내용
+                            </p>
+                            </div>
+                            <button><i class="icon xi-plus"></i><span>MORE</span></button>
+                        </div>
+                        <!-- textbox -->
+                    </li>
+                    <!-- itemList3 -->
+                    <li class="itemList" data-aos="fade-left">
+                        <div class="imgbox">
+                            <span style="background: url(./iamges/about01.jpg);"></span>
+                        </div>
+                        <!-- imgbox -->
+                        <div class="textbox">
+                            <div class="newsTitle">뉴스타이틀</div>
+                            <div class="mt20"></div>
+                            <div class="cont">
+                                <p>
+                                뉴스 내용 <br>뉴스 내용 <br>뉴스 내용
+                            </p>
+                            </div>
+                            <button><i class="icon xi-plus"></i><span>MORE</span></button>
+                        </div>
+                        <!-- textbox -->
+                    </li>
+                    <!-- itemList4 -->
+                </ul>
+                <!-- item -->
+            </div>
+            <!-- itembox -->
+            <div class="mt100"></div>
+            <div class="paging">
+                <p>
+                    <a href="#none" class="fisrt">&lt;&lt;</a>
+                    <a href="#none">&lt;</a>
+                </p>
+                <ol>
+                    <li><a href="buyer.html" class="this">1</a></li>
+                    <li><a href="#" class="other">2</a></li>
+                    <li><a href="#" class="other">3</a></li>
+                    <li><a href="#" class="other">4</a></li>
+                </ol>
+                <p>
+                    <a href="#none">&gt;</a>
+                    <a href="#none" class="last">&gt;&gt;</a>
+                </p>
+            </div>
+            <!-- paging -->
+        </div>
+        <!-- content -->
         <div class="mt150"></div>
         <footer class="clearfix">
             <div class="footer-inner">
@@ -132,12 +234,23 @@
         </div>
     </div>
     <!-- wrap -->
+    
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
-
-     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="./script/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        AOS.init({
+            offset: 120,
+            delay: 0,
+            duration: 400,
+            easing: 'ease',
+            once: false,
+            mirror: false,
+            anchorPlacement: 'top-bottom'
+        });
+    </script>
 </body>
+
 </html>
