@@ -254,7 +254,7 @@ button {
 textarea,
 select,
 button,
-table {
+table{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
     line-height: 1.5em;
@@ -263,22 +263,11 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-input {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 14px;
-    line-height: 1.5em;
-    color: #191919;
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
 input::placeholder,
 textarea::placeholder {
     color: #999999;
     font-size: 13px;
 }
-
 input[type="text"],
 input[type="email"],
 input[type="file"],
@@ -289,7 +278,6 @@ select {
     padding: 0 0 0 3px;
     vertical-align: top;
 }
-
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -347,11 +335,11 @@ input[type="radio"]:checked {
 
 select {
     height: 44px;
-    color: #555555;
+    color: #191919;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
-    border-top: 1px solid #9a9a9a;
-    border-left: 1px solid #ababab;
+    border-top: 1px solid #ededed;
+    border-left: 1px solid #ededed;
     outline: 0;
 }
 
@@ -645,7 +633,6 @@ input[type="button"] {
     .user li a {
         color: #fff;
     }
-
     .lang-box {
         position: absolute;
         z-index: 4;
@@ -653,12 +640,7 @@ input[type="button"] {
         top: 80%;
     }
 
-    .lang-wrap {
-        position: relative;
-    }
-
-    .lang-btn,
-    .lang-list li a {
+    .lang-btn{
         font-size: 16px;
         font-weight: 500;
         color: #fff;
@@ -667,7 +649,7 @@ input[type="button"] {
     .lang-btn {
         position: relative;
         display: block;
-        width: 115px;
+        width: 100px;
         height: 35px;
         border: 1px solid #fff;
         box-sizing: border-box;
@@ -678,8 +660,7 @@ input[type="button"] {
 
     .nav a:hover,
     .lang-btn:hover,
-    .lang-btn.active:hover,
-    .lang-list a:hover {
+    .lang-btn.active:hover{
         background-color: #000;
         color: #548292;
         text-shadow: 0px 0px 6px rgba(84, 130, 146, 0.7);
@@ -687,10 +668,10 @@ input[type="button"] {
 
     .lang-btn p {
         position: absolute;
-        top: 50%;
-        left: 0;
+        top: 47%;
+        left: 30px;
         transform: translateY(-50%);
-        width: 115px;
+        width: 100px;
         padding: 0 20px 0 10px;
         box-sizing: border-box;
     }
@@ -698,46 +679,13 @@ input[type="button"] {
     .lang-btn i.icon {
         position: absolute;
         top: 50%;
-        right: 10px;
+        left:  10px;
         transform: translateY(-50%);
     }
 
     .lang-btn i.icon::before {
-        content: "\e942";
+        content: "\e9d1";
     }
-
-    .lang-list {
-        position: absolute;
-        top: 100%;
-        transform: translateY(-1px);
-        left: 0;
-        width: 115px;
-        height: 0;
-        overflow: hidden;
-        background-color: #000;
-        border: 1px solid #fff;
-        border-top: 0;
-        box-sizing: border-box;
-    }
-
-    .lang-list li {
-        width: 113px;
-        margin: 10px 0;
-    }
-
-    .lang-list li a {
-        display: block;
-        width: 100%;
-        padding: 5px 20px 5px 10px;
-        box-sizing: border-box;
-        transition: background-color 0.2s ease, color 0.2s ease;
-    }
-
-    .lang-btn:hover ul.lang-list {
-        height: 200px;
-        transition-duration: 1s;
-    }
-
     .heaberMobile {
         display: none;
     }
@@ -788,15 +736,10 @@ input[type="button"] {
         position: absolute;
         z-index: 4;
         right: 10%;
-        top: 10px;
+        top: 8px;
     }
 
-    .lang-wrap {
-        position: relative;
-    }
-
-    .lang-btn,
-    .lang-list li a {
+    .lang-btn{
         font-size: 16px;
         font-weight: 500;
         color: #fff;
@@ -805,7 +748,7 @@ input[type="button"] {
     .lang-btn {
         position: relative;
         display: block;
-        width: 115px;
+        width: 100px;
         height: 35px;
         border: 1px solid #fff;
         box-sizing: border-box;
@@ -816,8 +759,7 @@ input[type="button"] {
 
     .nav a:hover,
     .lang-btn:hover,
-    .lang-btn.active:hover,
-    .lang-list a:hover {
+    .lang-btn.active:hover{
         background-color: #000;
         color: #548292;
         text-shadow: 0px 0px 6px rgba(84, 130, 146, 0.7);
@@ -825,10 +767,10 @@ input[type="button"] {
 
     .lang-btn p {
         position: absolute;
-        top: 50%;
-        left: 0;
+        top: 47%;
+        left: 30px;
         transform: translateY(-50%);
-        width: 115px;
+        width: 100px;
         padding: 0 20px 0 10px;
         box-sizing: border-box;
     }
@@ -836,39 +778,12 @@ input[type="button"] {
     .lang-btn i.icon {
         position: absolute;
         top: 50%;
-        right: 10px;
+        left:  10px;
         transform: translateY(-50%);
     }
 
     .lang-btn i.icon::before {
-        content: "\e942";
-    }
-
-    .lang-list {
-        position: absolute;
-        top: 100%;
-        transform: translateY(-1px);
-        left: 0;
-        width: 115px;
-        height: 0;
-        overflow: hidden;
-        background-color: #000;
-        border: 1px solid #fff;
-        border-top: 0;
-        box-sizing: border-box;
-    }
-
-    .lang-list li {
-        width: 113px;
-        margin: 10px 0;
-    }
-
-    .lang-list li a {
-        display: block;
-        width: 100%;
-        padding: 5px 20px 5px 10px;
-        box-sizing: border-box;
-        transition: background-color 0.2s ease, color 0.2s ease;
+        content: "\e9d1";
     }
 
     /* menubox */
@@ -1039,12 +954,7 @@ input[type="button"] {
         top: 20px;
     }
 
-    .lang-wrap {
-        position: relative;
-    }
-
-    .lang-btn,
-    .lang-list li a {
+    .lang-btn{
         font-size: 16px;
         font-weight: 500;
         color: #fff;
@@ -1053,7 +963,7 @@ input[type="button"] {
     .lang-btn {
         position: relative;
         display: block;
-        width: 115px;
+        width: 100px;
         height: 35px;
         border: 1px solid #fff;
         box-sizing: border-box;
@@ -1064,8 +974,7 @@ input[type="button"] {
 
     .nav a:hover,
     .lang-btn:hover,
-    .lang-btn.active:hover,
-    .lang-list a:hover {
+    .lang-btn.active:hover{
         background-color: #000;
         color: #548292;
         text-shadow: 0px 0px 6px rgba(84, 130, 146, 0.7);
@@ -1073,10 +982,10 @@ input[type="button"] {
 
     .lang-btn p {
         position: absolute;
-        top: 50%;
-        left: 0;
+        top: 47%;
+        left: 30px;
         transform: translateY(-50%);
-        width: 115px;
+        width: 100px;
         padding: 0 20px 0 10px;
         box-sizing: border-box;
     }
@@ -1084,39 +993,12 @@ input[type="button"] {
     .lang-btn i.icon {
         position: absolute;
         top: 50%;
-        right: 1px;
+        left:  10px;
         transform: translateY(-50%);
     }
 
     .lang-btn i.icon::before {
-        content: "\e942";
-    }
-
-    .lang-list {
-        position: absolute;
-        top: 100%;
-        transform: translateY(-1px);
-        left: 0;
-        width: 115px;
-        height: 0;
-        overflow: hidden;
-        background-color: #000;
-        border: 1px solid #fff;
-        border-top: 0;
-        box-sizing: border-box;
-    }
-
-    .lang-list li {
-        width: 113px;
-        margin: 10px 0;
-    }
-
-    .lang-list li a {
-        display: block;
-        width: 100%;
-        padding: 5px 20px 5px 10px;
-        box-sizing: border-box;
-        transition: background-color 0.2s ease, color 0.2s ease;
+        content: "\e9d1";
     }
 
     /* menubox */
@@ -1370,6 +1252,7 @@ input[type="button"] {
         background: url(../iamges/mo_main01@3x.jpg) no-repeat;
         background-size: cover;
         position: relative;
+        margin-top: 70px;
     }
 
     .mo-main .textbox1 {
@@ -1474,7 +1357,9 @@ input[type="button"] {
         background-color: #fff;
         text-align: center;
     }
-
+    div.item1.linebox{
+        margin-top: 8px;
+    }
     .linebox span :nth-child(1) {
         margin: auto;
     }
@@ -1570,7 +1455,9 @@ input[type="button"] {
         background-color: #fff;
         text-align: center;
     }
-
+    div.item1.linebox{
+        margin-top: 8px;
+    }
     .linebox span :nth-child(1) {
         margin: auto;
     }
@@ -1624,7 +1511,7 @@ input[type="button"] {
 
     .linebox .text {
         height: 100px;
-        line-height: 100px;
+        line-height: 3em;
     }
 }
 
@@ -1745,57 +1632,82 @@ footer {
 
 /*------------------------------------ footer end ------------------------------------*/
 
-/* topbtn */
-
-.topbtn {
+/* quickbtn */
+.quick{
+    position: fixed;    
     z-index: 999;
-}
-
-@media screen and (min-width: 1200px) {
-    .topbtn {
-        position: fixed;
-        bottom: 2%;
-        right: 1%;
-        width: 50px;
-        height: 50px;
-        background-color: #fff;
-        border: 1px solid #000;
-        box-shadow: 0px 1px 3px #767676;
+    box-sizing: border-box;
     }
-
-    .topbtn i.icon {
+.topbtn, .b2bbtn{
+    width: 50px; 
+    height: 50px;
+    display: block;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #fff;
+    border:1px solid #ededed;
+    box-shadow: 0px 1px 3px #dedede;
+    transition: background-color 0.3s ease;
+}
+.b2bbtn i.icon{
+    transform: rotate(45deg);
+}
+.topbtn:hover, .b2bbtn:hover{
+    background-color: #1b3745;
+}
+.topbtn:hover span,.topbtn:hover i, .b2bbtn:hover span{
+    color: #fff;
+}
+@media screen and (min-width: 1200px) {
+    .quick{
+        position: fixed;
+        bottom: 5%;
+        right: 2%;        
+        width: 65px;
+        box-sizing: border-box;
+    }
+    .quick li{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .quick i.icon {
         display: block;
         width: 100%;
         text-align: center;
+        line-height: 20px;
     }
-
-    .topbtn span {
+    .quick span {
         display: block;
         width: 100%;
         text-align: center;
         font-size: 15px;
     }
+   
 }
 
 @media screen and (min-width: 751px) and (max-width: 1199px) {
-    .topbtn {
+    .quick{
         position: fixed;
-        bottom: 2%;
-        right: 1%;
-        width: 50px;
-        height: 50px;
-        background-color: #fff;
-        border: 1px solid #000;
-        box-shadow: 0px 1px 3px #767676;
+        bottom: 5%;
+        right: 2%;        
+        width: 65px;
+        box-sizing: border-box;
     }
-
-    .topbtn i.icon {
+    .quick li{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .quick i.icon {
         display: block;
         width: 100%;
         text-align: center;
+        line-height: 20px;
     }
-
-    .topbtn span {
+    .quick span {
         display: block;
         width: 100%;
         text-align: center;
@@ -1805,25 +1717,44 @@ footer {
 
 
 @media screen and (max-width: 750px) {
-    .topbtn {
+    .quick{
         position: fixed;
-        bottom: 1%;
-        right: 1%;
-        width: 40px;
-        height: 40px;
-        background-color: #fff;
-        border: 1px solid #000;
-        box-shadow: 0px 1px 3px #767676;
+        bottom: 5%;
+        right: 2%;        
+        width: 50px;
     }
-
+    .quick li{
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .topbtn{    
+        position: relative;
+    }
     .topbtn i.icon {
         display: block;
         width: 100%;
         text-align: center;
-        font-size: 2em;
-        line-height: 40px;
+        line-height: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
-
+    .b2bbtn i.icon{
+        display: block;   
+        position: absolute;
+        top: 2%;
+        left: 20%;
+        transform: rotate(45deg);
+    }
+    .b2bbtn span{
+        position: absolute;
+        top: 23%;
+        left: 25%;
+        font-size: 13px;
+    }
     .topbtn span {
         display: none;
     }
@@ -1894,7 +1825,7 @@ footer {
     #about-wrap .itembox2 {
         position: relative;
         width: 100%;
-        height: 800px;
+        height: 850px;
         display: block;
         padding-top: 150px;
     }
@@ -1923,12 +1854,13 @@ footer {
         position: absolute;
         top: 450px;
         right: 2%;
+        text-align: right;
     }
 
     #about-wrap .itembox3 {
         position: relative;
         width: 100%;
-        height: 800px;
+        height: 950px;
         display: block;
         padding-top: 150px;
     }
@@ -2014,7 +1946,7 @@ footer {
         position: relative;
         max-width: 100%;
         width: 700px;
-        height: 900px;
+         overflow: hidden;
         margin: auto;
         padding-top: 150px;
     }
@@ -2620,10 +2552,11 @@ footer {
 
 
 
-/*------------------------------------ upload-inner start ------------------------------------*/
+/*------------------------------------ upload-inner, news-inner start ------------------------------------*/
 
 
-#upload-inner-wrap .content .upload-inner .title {
+#upload-inner-wrap .content .upload-inner .title,
+#news-inner-wrap .title {
     text-align: left;
 }
 
@@ -2652,17 +2585,25 @@ footer {
     padding: 20px 10px;
 }
 
-#upload-inner-wrap .content button {
+.filebox {
+    border-top: 1px solid #ededed;
+    padding: 0 10px;
+}
+
+#upload-inner-wrap .content button,
+#news-inner-wrap .content button {
     width: 80px;
     position: relative;
 }
 
-#upload-inner-wrap .content button i::after {
+#upload-inner-wrap .content button i::after,
+#news-inner-wrap .content button i::after {
     content: "\eb1f";
     padding-right: 40px;
 }
 
-#upload-inner-wrap .content button span {
+#upload-inner-wrap .content button span,
+#news-inner-wrap .content button span {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2777,13 +2718,15 @@ button.writeSumbit:hover {
 
 
 /*------------------------------------ news end ------------------------------------*/
-#news-wrap .content{
+#news-wrap .content {
     overflow: hidden;
 }
+
 @media screen and (min-width: 1200px) {
     #news-wrap .item {
         margin: auto;
         position: relative;
+        overflow: hidden;
     }
 
     #news-wrap li.itemList {
@@ -2862,6 +2805,7 @@ button.writeSumbit:hover {
     #news-wrap .item {
         max-width: 100%;
         width: 700px;
+        overflow: hidden;
         margin: auto;
         position: relative;
         padding: 50px;
@@ -2872,31 +2816,20 @@ button.writeSumbit:hover {
         width: 70%;
         position: relative;
         margin-bottom: 150px;
-    }
-
-    .item li:nth-child(odd) {
         float: left;
         text-align: left;
     }
 
-    .item li:nth-child(odd) .textbox button {
-        right: 0;
+    .item li .textbox button {
+        right: 10px;
     }
 
-    .item li:nth-child(even) {
-        float: right;
-        text-align: right;
-    }
-
-    .item li:nth-child(even) .textbox button {
-        left: 60px;
-    }
-
-    #news-wrap li .imgbox{
+    #news-wrap li .imgbox {
         width: 600px;
         height: 486px;
         margin: auto;
     }
+
     #news-wrap li .imgbox span {
         display: block;
         width: 100%;
@@ -2905,14 +2838,16 @@ button.writeSumbit:hover {
 
     #news-wrap li .textbox {
         position: absolute;
-        width: 500px;
+        width: 400px;
         display: block;
         bottom: 0;
         right: 0;
         background-color: #fff;
         padding: 50px 60px 15px 60px;
         z-index: 333;
-    }#news-wrap li .textbox .newsTitle {
+    }
+
+    #news-wrap li .textbox .newsTitle {
         font-size: 2.2rem;
         font-weight: 600;
     }
@@ -2937,7 +2872,77 @@ button.writeSumbit:hover {
 
 }
 
-@media screen and (max-width: 750px) {}
+@media screen and (max-width: 750px) {
+    #news-wrap .item {
+        max-width: 100%;
+        width: 700px;
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+
+    #news-wrap li.itemList {
+        width: 70%;
+        position: relative;
+        margin-bottom: 150px;
+        float: left;
+        text-align: left;
+    }
+
+    .item li .textbox button {
+        right: 10px;
+    }
+
+    #news-wrap li .imgbox {
+        width: 400px;
+        height: 486px;
+        margin: auto;
+    }
+
+    #news-wrap li .imgbox span {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #news-wrap li .textbox {
+        position: absolute;
+        width: 200px;
+        display: block;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 40px;
+        z-index: 333;
+    }
+
+    #news-wrap li .textbox .newsTitle {
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+
+    #news-wrap li .textbox .cont p {
+        width: 100%;
+        height: 60px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        text-overflow: ellipsis;
+    }
+
+    #news-wrap li .textbox button {
+        position: absolute;
+        bottom: -100;
+        width: 100px;
+        float: right;
+        background-color: transparent;
+        border: 1px solid #000;
+        display: block;
+    }
+
+}
 
 /*------------------------------------ user start ------------------------------------*/
 
@@ -3282,9 +3287,21 @@ table .radio label.right {
     color: #b30000;
     display: block;
 }
-
+.ele{
+    display: inline-block;
+    width: 5%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: inherit;
+}
 .type input::placeholder {
     font-size: 11.6px;
+}
+.write table td p{
+    color: #999;
+    font-size: 13px;
+    padding-left: 5px;
 }
 
 table .btn {
@@ -3311,21 +3328,25 @@ table .btn:hover {
 
 .agreement {
     max-width: 100%;
-    width: 400px;
+    width: 500px;
     margin: auto;
 }
 
 .agreement p {
     font-weight: 600;
+    font-size: 18px;
 }
 
 .agreement p input {
     width: 20px;
 }
-
+.agreement p label {
+    font-weight: 400;
+    font-size: 14px;
+}
 .agreement span {
     max-width: 100%;
-    width: 400px;
+    width: 500px;
     height: 200px;
     margin: auto;
     overflow-y: scroll;
@@ -3409,15 +3430,16 @@ table .btn:hover {
 /*------------------------------------ information start
 -----------------------------------*/
 .information {
-    width: 400px;
+    width: 600px;
     max-width: 100%;
     margin: auto;
 }
 
 .information form {
-    width: 400px;
+    width: 600px;
     max-width: 100%;
     margin: auto;
+    border-top: 2px solid #ededed;
 }
 
 .information span {

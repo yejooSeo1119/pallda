@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="../css/xeicon.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>PALLDA</title>
 </head>
+
 <body>
     <div class="wrap" id="find-wrap">
         <header class="headerPc">
@@ -29,18 +31,10 @@
                         <li><a href="./sign.html" class="join">Sign Up</a></li>
                     </ul>
                     <div class="lang-box">
-                        <div class="lang-wrap">
-                            <div class="lang-btn">
-                                <p><span>KOR</span></p>
-                                <i class="icon xi-angle-down"></i>
-                            </div>
-                            <!-- lang btn -->
-                            <ul class="lang-list">
-                                <li><a href="../index.html">KOR</a></li>
-                                <li><a href="../eng/index.html">ENG</a></li>
-                            </ul>
-                        </div>
-                        <!-- 언어선택 -->
+                        <a href="../eng/index.html" target="_blank" class="lang-btn">
+                            <i class="icon xi-globus xi-1x"></i>
+                            <p><span>KOR</span></p>
+                        </a>
                     </div>
                     <!-- lang-box -->
                 </div>
@@ -54,18 +48,10 @@
                     <h1><a href="../index.html"><img src="../iamges/logo.svg" alt="logo"></a></h1>
                     <!-- 로고 -->
                     <div class="lang-box">
-                        <div class="lang-wrap">
-                            <div class="lang-btn">
-                                <p><span>KOR</span></p>
-                                <i class="icon xi-angle-down"></i>
-                            </div>
-                            <!-- lang btn -->
-                            <ul class="lang-list">
-                                <li><a href="../index.html">KOR</a></li>
-                                <li><a href="../eng/index.html">ENG</a></li>
-                            </ul>
-                        </div>
-                        <!-- 언어선택 -->
+                        <a href="../eng/index.html" target="_blank" class="lang-btn">
+                            <i class="icon xi-globus xi-1x"></i>
+                            <p><span>KOR</span></p>
+                        </a>
                     </div>
                     <!-- lang-box -->
                     <div class="menuBtn">
@@ -131,6 +117,9 @@
                             </div>
                             <!-- mail -->
                             <div class="mt20"></div>
+                            <p class="error" style="display: none;">이름, 이메일을 입력해 주세요.</p>
+                            <!-- 입력 안했을 때 메세지 -->
+                            <div class="mt20"></div>
                             <div class="btn">
                                 <a href="./login.html" class="checkboxBtn" role="button">확인</a>
                             </div>
@@ -164,6 +153,9 @@
                                 <input type="text" name="Email" id="Email" placeholder="이메일" class="col100">
                             </div>
                             <!-- mail -->
+                            <div class="mt20"></div>
+                            <p class="error" style="display: none;">아이디, 이름, 이메일을 입력해 주세요.</p>
+                            <!-- 입력 안했을 때 메세지 -->
                             <div class="mt20"></div>
                             <div class="btn">
                                 <a href="./login.html" class="checkboxBtn" role="button">확인</a>
@@ -205,14 +197,29 @@
             <div class="mt30"></div>
         </footer>
         <!-- footer -->
-        <div class="topbtn">
-            <a href="#"><i class="icon xi-arrow-up xi-2x"></i><span>TOP</span></a>
+        <div class="quick">
+            <ul>
+                <li class="b2bbtn">
+                    <a href="../b2c/index.html" target="_blank">
+                        <i class="icon xi-arrow-up xi-2x"></i>
+                        <span>B2C</span>
+                    </a>
+                </li>
+                <!-- b2bbtn -->
+                <div class="mt10"></div>
+                <li class="topbtn">
+                    <a href="#"><i class="icon xi-arrow-up xi-2x"></i><span>TOP</span></a>
+                </li>
+                <!-- topbtn -->
+            </ul>
         </div>
+        <!-- quick -->
     </div>
     <!-- find-wrap -->
 
-     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="../script/script.js"></script>
 </body>
+
 </html>

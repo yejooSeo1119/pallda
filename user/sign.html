@@ -31,18 +31,10 @@
                         <li><a href="./sign.html" class="join">Sign Up</a></li>
                     </ul>
                     <div class="lang-box">
-                        <div class="lang-wrap">
-                            <div class="lang-btn">
-                                <p><span>KOR</span></p>
-                                <i class="icon xi-angle-down"></i>
-                            </div>
-                            <!-- lang btn -->
-                            <ul class="lang-list">
-                                <li><a href="../index.html">KOR</a></li>
-                                <li><a href="../eng/index.html">ENG</a></li>
-                            </ul>
-                        </div>
-                        <!-- 언어선택 -->
+                        <a href="../eng/index.html" target="_blank" class="lang-btn">
+                            <i class="icon xi-globus xi-1x"></i>
+                            <p><span>KOR</span></p>
+                        </a>
                     </div>
                     <!-- lang-box -->
                 </div>
@@ -56,18 +48,10 @@
                     <h1><a href="../index.html"><img src="../iamges/logo.svg" alt="logo"></a></h1>
                     <!-- 로고 -->
                     <div class="lang-box">
-                        <div class="lang-wrap">
-                            <div class="lang-btn">
-                                <p><span>KOR</span></p>
-                                <i class="icon xi-angle-down"></i>
-                            </div>
-                            <!-- lang btn -->
-                            <ul class="lang-list">
-                                <li><a href="../index.html">KOR</a></li>
-                                <li><a href="../eng/index.html">ENG</a></li>
-                            </ul>
-                        </div>
-                        <!-- 언어선택 -->
+                        <a href="../eng/index.html" target="_blank" class="lang-btn">
+                            <i class="icon xi-globus xi-1x"></i>
+                            <p><span>KOR</span></p>
+                        </a>
                     </div>
                     <!-- lang-box -->
                     <div class="menuBtn">
@@ -131,36 +115,40 @@
                                         </colgroup>
                                         <tbody>
                                             <tr>
-                                                <th scope="row" class="text">아이디
+                                                <th scope="row" class="text">
+                                                    아이디
                                                 </th>
                                                 <td>
                                                     <input type="text" id="membId" name="membId"
-                                                        placeholder="영문 소문자/ 숫자, 4~16자" class="col100">
+                                                        placeholder="영문 소문자/ 숫자 조합, 4~16자" class="col100">
                                                     <span class="error"></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row" class="text">비밀번호
+                                                <th scope="row" class="text">
+                                                    비밀번호
                                                 </th>
                                                 <td>
                                                     <input type="text" id="membPw" name="membPw"
-                                                        placeholder="영문 대소문자/숫자/특수문자 중 2가지 이상 조합,4~16자" maxlength="16"
+                                                        placeholder="영문 대소문자/숫자/특수문자 조합,6~16자" maxlength="16"
                                                         class="col100">
                                                     <span class="error"></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row" class="text">비밀번호 확인
+                                                <th scope="row" class="text">
+                                                    비밀번호 확인
                                                 </th>
                                                 <td>
                                                     <input type="text" id="membConfirm" name="membConfirm"
-                                                        placeholder="영문 대소문자/숫자/특수문자 중 2가지 이상 조합,4~16자" class="col100">
+                                                        class="col100">
                                                     <br>
                                                     <span class="confirm"></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row" class="text">이름
+                                                <th scope="row" class="text">
+                                                    이름
                                                 </th>
                                                 <td>
                                                     <input type="text" id="membName" name="membName" class="col100">
@@ -168,16 +156,17 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row" class="text">휴대전화
+                                                <th scope="row" class="text">
+                                                    연락처
                                                 </th>
                                                 <td>
-                                                    <input type="text" id="membNum" name="membNum"
-                                                        placeholder="공백 없이 입력해 주세요." class="col100">
+                                                    <input type="text" id="membNum" name="membNum" class="col100">
                                                     <span class="error"></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row" class="text">이메일
+                                                <th scope="row" class="text">
+                                                    이메일
                                                 </th>
                                                 <td>
                                                     <input type="text" id="membMail" name="membMail" class="col100">
@@ -185,11 +174,12 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row" class="text" style="vertical-align: top;">주소
+                                                <th scope="row" class="text" style="vertical-align: top;">
+                                                    주소
                                                 </th>
                                                 <td>
-                                                    <input type="text" id="membZipCode" name="membZipCode" class="col65"
-                                                    style="margin: 0 7px 10px 0;">
+                                                    <input type="text" id="membZipCode" name="membZipCode" class="col70"
+                                                        style="margin: 0 7px 10px 0;">
                                                     <a href="#none" id="btnZipcode1" class="btn">우편번호</a>
                                                     <span class="error"></span>
                                                     <input type="text" id="membAdd1" name="membAdd1" placeholder="기본주소"
@@ -200,10 +190,11 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row" class="text">프로필 사진
+                                                <th scope="row" class="text">
+                                                    프로필 사진
                                                 </th>
                                                 <td>
-                                                    <input type="text" id="membUpload" name="membUpload" class="col65"
+                                                    <input type="text" id="membUpload" name="membUpload" class="col70"
                                                         style="margin: 0 7px 10px 0;">
                                                     <a href="#none" id="btnUpload" class="btn">파일찾기</a>
                                                     <label for="membUpload"></label>
@@ -216,7 +207,8 @@
                                     <div class="agreement">
                                         <h6>약관동의</h6>
                                         <div class="mt50"></div>
-                                        <p style="display: inline; margin-right: 100px;">서비스 이용약관 동의</p>
+                                        <p>서비스 이용약관 동의</p>
+                                        <div class="mt10"></div>
                                         <p style="display: inline;">
                                             <input type="checkbox" name="membAgree1" id="membAgree1">
                                             <label for="membAgree1">[필수] 이용약관에 동의합니다.</label>
@@ -236,7 +228,8 @@
                                             ④ "비회원"이라 함은 회원에 가입하지 않고 "쇼핑몰"이 제공하는 서비스를 이용하는 자를 말합니다.
                                         </span>
                                         <div class="mt30"></div>
-                                        <p style="display: inline; margin-right: 84px;">개인정보 수집/이용 동의</p>
+                                        <p>개인정보 수집/이용 동의</p>
+                                        <div class="mt10"></div>
                                         <p style="display: inline;">
                                             <input type="checkbox" name="membAgree2" id="membAgree2">
                                             <label for="membAgree2">[필수] 이용약관에 동의합니다.</label>
@@ -270,35 +263,39 @@
                                         </colgroup>
                                         <tbody>
                                             <tr>
-                                                <th scope="row" class="text">아이디
+                                                <th scope="row" class="text">
+                                                    아이디
                                                 </th>
                                                 <td>
                                                     <input type="text" id=combId" name="combId"
-                                                        placeholder="영문 소문자/ 숫자, 4~16자" class="col100">
+                                                        placeholder="영문 소문자/ 숫자 조합, 4~16자" class="col100">
                                                     <span class="error"></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row" class="text">비밀번호
+                                                <th scope="row" class="text">
+                                                    비밀번호
                                                 </th>
                                                 <td>
                                                     <input type="text" id="comPw" name="comPw"
-                                                        placeholder="영문 대소문자/숫자/특수문자 중 2가지 이상 조합,4~16자" maxlength="16" class="col100">
+                                                        placeholder="영문 대소문자/숫자/특수문자 조합, 6~16자" maxlength="16"
+                                                        class="col100">
                                                     <span class="error"></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row" class="text">비밀번호 확인
+                                                <th scope="row" class="text">
+                                                    비밀번호 확인
                                                 </th>
                                                 <td>
-                                                    <input type="text" id="comConfirm" name="comConfirm"
-                                                        placeholder="영문 대소문자/숫자/특수문자 중 2가지 이상 조합,4~16자" class="col100">
+                                                    <input type="text" id="comConfirm" name="comConfirm" class="col100">
                                                     <br>
                                                     <span class="confirm"></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row" class="text">회사명
+                                                <th scope="row" class="text">
+                                                    회사명
                                                 </th>
                                                 <td>
                                                     <input type="text" id="comName" name="comName" class="col100">
@@ -306,7 +303,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row" class="text">담당자 이름
+                                                <th scope="row" class="text">
+                                                    담당자 이름
                                                 </th>
                                                 <td>
                                                     <input type="text" id="userName" name="userName" class="col100">
@@ -314,16 +312,17 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row" class="text">휴대전화
+                                                <th scope="row" class="text">
+                                                    연락처
                                                 </th>
                                                 <td>
-                                                    <input type="text" id="comNum" name="comNum"
-                                                        placeholder="공백 없이 입력해 주세요." class="col100">
+                                                    <input type="text" id="comNum" name="comNum" class="col100">
                                                     <span class="error"></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row" class="text">이메일
+                                                <th scope="row" class="text">
+                                                    이메일
                                                 </th>
                                                 <td>
                                                     <input type="text" id="comMail" name="comMail" class="col100">
@@ -331,25 +330,29 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row" class="text" style="vertical-align: top;">주소
+                                                <th scope="row" class="text" style="vertical-align: top;">
+                                                    주소
                                                 </th>
                                                 <td>
                                                     <input type="text" id="comZipCode" name="comZipCode" class="col70"
-                                                    style="margin:0 10px 10px 0;">
+                                                        style="margin:0 10px 10px 0;">
                                                     <a href="#none" id="btnZipcode2" class="btn">우편번호</a>
                                                     <span class="error"></span>
                                                     <input type="text" id="comAdd1" name="comAdd1" placeholder="기본주소"
-                                                      class="col100">
-                                                    <input type="text" id="comAdd2" name="comAdd2" placeholder="상세주소" class="col100">
+                                                        class="col100" style="margin-bottom: 10px;">
+                                                    <input type="text" id="comAdd2" name="comAdd2" placeholder="상세주소"
+                                                        class="col100">
                                                     <span class="error"></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row" class="text">프로필 사진
+                                                <th scope="row" class="text">
+                                                    프로필 사진
                                                 </th>
                                                 <td>
-                                                    <input type="text" id="comUpload" name="comUpload" class="col65"style="margin: 0 7px 10px 0;">
-                                                    <a href="#none" id="btnUpload" class="btn">파일찾기</a>
+                                                    <input type="text" id="comUpload" name="comUpload" class="col70"
+                                                        style="margin: 0 7px 10px 0;">
+                                                    <a href="#none" id="btnUpload2" class="btn">파일찾기</a>
                                                     <label for="comUpload"></label>
                                                     <span class="error"></span>
                                                 </td>
@@ -360,7 +363,8 @@
                                     <div class="agreement">
                                         <h6>약관동의</h6>
                                         <div class="mt50"></div>
-                                        <p style="display: inline; margin-right: 100px;">서비스 이용약관 동의</p>
+                                        <p>서비스 이용약관 동의</p>
+                                        <div class="mt10"></div>
                                         <p style="display: inline;">
                                             <input type="checkbox" name="membAgree1" id="membAgree1">
                                             <label for="membAgree1">[필수] 이용약관에 동의합니다.</label>
@@ -380,7 +384,8 @@
                                             ④ "비회원"이라 함은 회원에 가입하지 않고 "쇼핑몰"이 제공하는 서비스를 이용하는 자를 말합니다.
                                         </span>
                                         <div class="mt30"></div>
-                                        <p style="display: inline; margin-right: 84px;">개인정보 수집/이용 동의</p>
+                                        <p>개인정보 수집/이용 동의</p>
+                                        <div class="mt10"></div>
                                         <p style="display: inline;">
                                             <input type="checkbox" name="membAgree2" id="membAgree2">
                                             <label for="membAgree2">[필수] 이용약관에 동의합니다.</label>
@@ -452,9 +457,23 @@
         <div class="mt30"></div>
     </footer>
     <!-- footer -->
-    <div class="topbtn">
-        <a href="#"><i class="icon xi-arrow-up xi-2x"></i><span>TOP</span></a>
+    <div class="quick">
+        <ul>
+            <li class="b2bbtn">
+                <a href="../b2c/index.html" target="_blank">
+                    <i class="icon xi-arrow-up xi-2x"></i>
+                    <span>B2C</span>
+                </a>
+            </li>
+            <!-- b2bbtn -->
+            <div class="mt10"></div>
+            <li class="topbtn">
+                <a href="#"><i class="icon xi-arrow-up xi-2x"></i><span>TOP</span></a>
+            </li>
+            <!-- topbtn -->
+        </ul>
     </div>
+    <!-- quick -->
     </div>
     <!-- sign-wrap -->
 

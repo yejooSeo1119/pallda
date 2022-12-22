@@ -31,18 +31,10 @@
                         <li><a href="./sign.html" class="join">Sign Up</a></li>
                     </ul>
                     <div class="lang-box">
-                        <div class="lang-wrap">
-                            <div class="lang-btn">
-                                <p><span>KOR</span></p>
-                                <i class="icon xi-angle-down"></i>
-                            </div>
-                            <!-- lang btn -->
-                            <ul class="lang-list">
-                                <li><a href="../index.html">KOR</a></li>
-                                <li><a href="../eng/index.html">ENG</a></li>
-                            </ul>
-                        </div>
-                        <!-- 언어선택 -->
+                        <a href="../eng/index.html" target="_blank" class="lang-btn">
+                            <i class="icon xi-globus xi-1x"></i>
+                            <p><span>KOR</span></p>
+                        </a>
                     </div>
                     <!-- lang-box -->
                 </div>
@@ -56,18 +48,10 @@
                     <h1><a href="../index.html"><img src="../iamges/logo.svg" alt="logo"></a></h1>
                     <!-- 로고 -->
                     <div class="lang-box">
-                        <div class="lang-wrap">
-                            <div class="lang-btn">
-                                <p><span>KOR</span></p>
-                                <i class="icon xi-angle-down"></i>
-                            </div>
-                            <!-- lang btn -->
-                            <ul class="lang-list">
-                                <li><a href="../index.html">KOR</a></li>
-                                <li><a href="../eng/index.html">ENG</a></li>
-                            </ul>
-                        </div>
-                        <!-- 언어선택 -->
+                        <a href="../eng/index.html" target="_blank" class="lang-btn">
+                            <i class="icon xi-globus xi-1x"></i>
+                            <p><span>KOR</span></p>
+                        </a>
                     </div>
                     <!-- lang-box -->
                     <div class="menuBtn">
@@ -116,71 +100,75 @@
                             </colgroup>
                             <tbody>
                                 <tr>
-                                    <th scope="row" class="text">아이디
+                                    <th scope="row" class="text">
+                                        아이디
                                     </th>
                                     <td>
-                                        <input type="text" id="membId" name="membId"
-                                            placeholder="영문 소문자/ 숫자, 4~16자" class="col100">
+                                        <input type="text" id="membId2" name="membId2" class="col95" readonly>
                                         <span class="error"></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="text">비밀번호
+                                    <th scope="row" class="text">
+                                        비밀번호
                                     </th>
                                     <td>
-                                        <input type="text" id="membPw" name="membPw"
-                                            placeholder="영문 대소문자/숫자/특수문자 중 2가지 이상 조합,4~16자" maxlength="16"
-                                            class="col100">
+                                        <input type="text" id="membPw2" name="membPw2"
+                                            placeholder="영문 대소문자/숫자/특수문자 조합 6~16자" maxlength="16" class="col95">
                                         <span class="error"></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="text">비밀번호 확인
+                                    <th scope="row" class="text">
+                                        비밀번호 확인
                                     </th>
                                     <td>
-                                        <input type="text" id="membConfirm" name="membConfirm"
-                                            placeholder="영문 대소문자/숫자/특수문자 중 2가지 이상 조합,4~16자" class="col100">
+                                        <input type="text" id="membConfirm2" name="membConfirm2" class="col95">
                                         <br>
                                         <span class="confirm"></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="text">이름
+                                    <th scope="row" class="text">
+                                        이름
                                     </th>
                                     <td>
-                                        <input type="text" id="membName" name="membName" class="col100">
+                                        <input type="text" id="membName2" name="membName2" class="col95">
                                         <span class="error"></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="text">휴대전화
+                                    <th scope="row" class="text">
+                                        연락처
                                     </th>
                                     <td>
-                                        <input type="text" id="membNum" name="membNum"
-                                            placeholder="공백 없이 입력해 주세요." class="col100">
+                                        <input type="text" id="membNum2" name="membNum2" placeholder="공백 없이 입력해 주세요."
+                                            class="col95">
                                         <span class="error"></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="text">이메일
+                                    <th scope="row" class="text">
+                                        이메일
                                     </th>
                                     <td>
-                                        <input type="text" id="membMail" name="membMail" class="col100">
+                                        <input type="text" id="membMail2" name="membMail2" class="col95">
                                         <span class="error"></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="text" style="vertical-align: top;">주소
+                                    <th scope="row" class="text" style="vertical-align: top;">
+                                        주소
                                     </th>
                                     <td>
-                                        <input type="text" id="membZipCode" name="membZipCode" class="col70"
+                                        <input type="text" id="membZipCode2" name="membZipCode2" class="col60"
                                             style="margin: 0 5px 10px 0;">
-                                        <a href="#none" id="btnZipcode1" class="btn">우편번호</a>
+                                        <a href="#none" id="btnZipcode4" class="btn">우편번호</a>
                                         <span class="error"></span>
-                                        <input type="text" id="membAdd1" name="membAdd1" placeholder="기본주소"
-                                            style="margin-bottom: 10px;" class="col100">
-                                        <input type="text" id="membAdd2" name="membAdd2" placeholder="상세주소"
-                                            class="col100">
+                                        <input type="text" id="membAdd3" name="membAdd3" placeholder="기본주소"
+                                            style="margin-bottom: 10px;" class="col95">
+                                        <input type="text" id="membAdd4" name="membAdd4" placeholder="상세주소"
+                                            class="col95">
                                         <span class="error"></span>
                                     </td>
                                 </tr>
@@ -188,10 +176,10 @@
                                     <th scope="row" class="text">프로필 사진
                                     </th>
                                     <td>
-                                        <input type="text" id="membUpload" name="membUpload" class="col70"
+                                        <input type="text" id="membUpload2" name="membUpload2" class="col60"
                                             style="margin: 0 5px 10px 0;" readonly>
-                                        <a href="#none" id="btnUpload" class="btn">파일찾기</a>
-                                        <label for="membUpload"></label>
+                                        <a href="#none" id="btnUpload4" class="btn">파일찾기</a>
+                                        <label for="membUpload2"></label>
                                         <span class="error"></span>
                                     </td>
                                 </tr>
@@ -210,47 +198,61 @@
             <ul>
                 <li><a href="javascript:;" onclick="alert('수정되었습니다.'); document.location.href='../index.html'"
                         class="check" id="membSumbit" role="button">확인</a></li>
-                <li><a href="javascript:;" onclick="alert('취소되었습니다.'); document.location.href='../index.html'"
-                        class="cancle" role="button">취소</a></li>
+                <li><a href="javascript:;" onclick="document.location.href='../index.html'" class="cancle"
+                        role="button">취소</a></li>
                 <li><a href="javascript:;" onclick="alert('회원을 탈퇴하시겠습니까?');document.location.href='../../index.html'"
-                    class="unregister" role="button">회원탈퇴</a></li>
+                        class="unregister" role="button">회원탈퇴</a></li>
             </ul>
         </div>
     </div>
     <!-- sign -->
     </div>
     <!-- content -->
-        <div class="mt150"></div>
-        <footer class="clearfix">
-            <div class="footer-inner">
-                <div class="mt30"></div>
-                <div class="foot-inner1">
-                    <ul>
-                        <li>E-mail.</li>
-                        <li>palldaofficial@gmail.com</li>
-                    </ul>
-                    <ul>
-                        <li>Address.</li>
-                        <li>45, Centurm dong-ro, Haeundae-gu, Busan, Republic of Korea</li>
-                    </ul>
-                    <ul>
-                        <li>Tel.</li>
-                        <li>82+10 - 4690 - 6316</li>
-                    </ul>
-                </div>
-                <!-- foot-inner1 -->
-                <div class="foot-inner2">
-                    <h1><img src="../iamges/logo.svg" alt="logo"></h1>
-                </div>
-                <!-- foot-inner2 -->
-            </div>
-            <!-- footer-inner -->
+    <div class="mt150"></div>
+    <footer class="clearfix">
+        <div class="footer-inner">
             <div class="mt30"></div>
-        </footer>
-        <!-- footer -->
-        <div class="topbtn">
-            <a href="#"><i class="icon xi-arrow-up xi-2x"></i><span>TOP</span></a>
+            <div class="foot-inner1">
+                <ul>
+                    <li>E-mail.</li>
+                    <li>palldaofficial@gmail.com</li>
+                </ul>
+                <ul>
+                    <li>Address.</li>
+                    <li>45, Centurm dong-ro, Haeundae-gu, Busan, Republic of Korea</li>
+                </ul>
+                <ul>
+                    <li>Tel.</li>
+                    <li>82+10 - 4690 - 6316</li>
+                </ul>
+            </div>
+            <!-- foot-inner1 -->
+            <div class="foot-inner2">
+                <h1><img src="../iamges/logo.svg" alt="logo"></h1>
+            </div>
+            <!-- foot-inner2 -->
         </div>
+        <!-- footer-inner -->
+        <div class="mt30"></div>
+    </footer>
+    <!-- footer -->
+    <div class="quick">
+        <ul>
+            <li class="b2bbtn">
+                <a href="../b2c/index.html" target="_blank">
+                    <i class="icon xi-arrow-up xi-2x"></i>
+                    <span>B2C</span>
+                </a>
+            </li>
+            <!-- b2bbtn -->
+            <div class="mt10"></div>
+            <li class="topbtn">
+                <a href="#"><i class="icon xi-arrow-up xi-2x"></i><span>TOP</span></a>
+            </li>
+            <!-- topbtn -->
+        </ul>
+    </div>
+    <!-- quick -->
     </div>
     <!-- sign-wrap -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"

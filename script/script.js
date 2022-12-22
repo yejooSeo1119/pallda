@@ -1,14 +1,3 @@
-$(document).ready(function () {
-
-    $('.lang-wrap> .lang-btn >p').mouseenter(function () {
-        $(this).children('.lang-list').stop().slideDown();
-    });
-
-    $('.lang-wrap> div.lang-btn').mouseleave(function () {
-        $(this).children('.lang-list').stop().slideUp();
-    });
-
-});
 
 
 
@@ -70,13 +59,13 @@ $(document).ready(function () {
 
 
 //sign, upload tab
-$(function() {
-    $('ul.tab-tit li a').click(function() {
-      var onTab = $(this).attr('data-tab');
-      $('ul.tab-tit li a').removeClass('on');
-      $('.type .cnt').removeClass('on');
-      $(this).addClass('on');
-      $('#' + onTab).addClass('on');
+$(function () {
+    $('ul.tab-tit li a').click(function () {
+        var onTab = $(this).attr('data-tab');
+        $('ul.tab-tit li a').removeClass('on');
+        $('.type .cnt').removeClass('on');
+        $(this).addClass('on');
+        $('#' + onTab).addClass('on');
     });
-  });
+});
 
