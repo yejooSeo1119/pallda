@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <title>PALLDA</title>
+</head>
+
+<body>
+    <div class="wrap" id="upload-wrap">
+        <header class="headerPc">
+            <!-- pcver. -->
+            <nav>
+                <div class="nav-box">
+                    <h1><a href="./index.html"><img src="../iamges/logo.svg" alt="logo"></a></h1>
+                    <ul class="nav">
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./buyer.html">BUYER</a></li>
+                        <li><a href="./seller.html">SELLER</a></li>
+                        <li><a href="./upload.html">UPLOAD</a></li>
+                        <li><a href="./news.html">NEWS</a></li>
+                    </ul>
+                    <!-- main nav -->
+                    <ul class="user">
+                        <li><a href="./user/login.html" class="login">Sign In</a></li>
+                        <li><a href="./user/sign.html" class="join">Sign Up</a></li>
+                    </ul>
+                    <div class="lang-box">
+                        <a href="../index.html" target="_blank" class="lang-btn">
+                            <i class="icon xi-globus xi-1x"></i>
+                            <p><span>ENG</span></p>
+                        </a>
+                    </div>
+                    <!-- lang-box -->
+                </div>
+                <!-- nav-box pc-->
+            </nav>
+        </header>
+        <!-- header -->
+        <header class="heaberMobile">
+            <nav>
+                <div class="nav-box">
+                    <h1><a href="./index.html"><img src="../iamges/logo.svg" alt="logo"></a></h1>
+                    <!-- 로고 -->
+                    <div class="lang-box">
+                        <a href="../index.html" target="_blank" class="lang-btn">
+                            <i class="icon xi-globus xi-1x"></i>
+                            <p><span>ENG</span></p>
+                        </a>
+                    </div>
+                    <!-- lang-box -->
+                    <div class="menuBtn">
+                        <a href="#" class="open"><i class="icon xi-bars xi-3x "></i></a>
+                    </div>
+                    <!-- menuBtn -->
+                    <div class="menu-wrap active">
+                        <div class="menu-box">
+                            <div class="close"><i class="icon xi-close xi-3x "></i></div>
+                            <ul class="gnb">
+                                <li><a href="./about.html"><span>ABOUT</span></a></li>
+                                <li><a href="./buyer.html"><span>BUYER</span></a></li>
+                                <li><a href="./seller.html"><span>SELLER</span></a></li>
+                                <li><a href="./upload.html"><span>UPLOAD</span></a></li>
+                                <li><a href="./news.html"><span>NEWS</span></a></li>
+                            </ul>
+                            <ul class="mo-login">
+                                <li><a href="./user/login.html">Sign Up</a></li>
+                                <li><a href="./user/sign.html">Sign Up</a></li>
+                            </ul>
+                        </div>
+                        <!-- menu-box -->
+                    </div>
+                    <!-- menu-wrap -->
+                </div>
+                <!-- nav-box mobile -->
+                <div class="nav-bg active"></div>
+            </nav>
+        </header>
+        <!-- header -->
+        <div class="content">
+            <div class="mt50"></div>
+            <h1><img src="../iamges/title_upload.jpg" alt="upload title"></h1>
+            <div class="mt50"></div>
+            <div class="board">
+                <div class="mt50"></div>
+                <table class="boardList">
+                    <div class="selectbox">
+                        <p class="type"> Select
+                            <select name="boardType" id="boardType" class="boardType">
+                                <option value="Buyer" class="buyer">Buyer</option>
+                                <option value="Seller" class="seller">Seller</option>
+                            </select>
+                        </p>
+                        <button class="write" onclick="document.location.href='./upload-write.html'">Write</a></button>
+                    </div>
+                    <!-- selectbox -->
+                    <colgroup>
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="35%">
+                        <col width="30%">
+                        <col width="15%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Type</th>
+                            <th>Title</th>
+                            <th>Writer</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="5" class="displaynone">No posts yet</td>
+                            <!-- 게시글 없을 때 -->
+                        </tr>
+                        <tr onclick="document.location.href='./upload-inner.html'" style="cursor: pointer;">
+                            <td class="boardNum">
+                                15
+                            </td>
+                            <td class="boardType buyer">
+                                Buyer
+                            </td>
+                            <td class="boardTitle">
+                                <i class="icon xi-lock-o"></i>
+                                업로드 타이틀
+                            </td>
+                            <td class="boardWriter">
+                                작성자
+                            </td>
+                            <td class="boardDate">
+                                2022.00.00
+                            </td>
+                        </tr>
+                        <!-- 권한자 접속 -->
+                        <tr onclick="alert('Posts can only be viewed by writer and administrators.')"
+                            style="cursor: pointer;">
+                            <td class="boardNum">
+                                14
+                            </td>
+                            <td class="boardType buyer">
+                                Buyer
+                            </td>
+                            <td class="boardTitle">
+                                <i class="icon xi-lock-o"></i>
+                                업로드 타이틀
+                            </td>
+                            <td class="boardWriter">
+                                작성자
+                            </td>
+                            <td class="boardDate">
+                                2022.00.00
+                            </td>
+                        </tr>
+                        <!-- 비권한자 접속시 경고창 -->
+                        <tr>
+                            <td class="boardNum">
+                                13
+                            </td>
+                            <td class="boardType buyer">
+                                Buyer
+                            </td>
+                            <td class="boardTitle">
+                                <i class="icon xi-lock-o"></i>
+                                업로드 타이틀
+                            </td>
+                            <td class="boardWriter">
+                                작성자
+                            </td>
+                            <td class="boardDate">
+                                2022.00.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="boardNum">
+                                12
+                            </td>
+                            <td class="boardType buyer">
+                                Buyer
+                            </td>
+                            <td class="boardTitle">
+                                <i class="icon xi-lock-o"></i>
+                                업로드 타이틀
+                            </td>
+                            <td class="boardWriter">
+                                작성자
+                            </td>
+                            <td class="boardDate">
+                                2022.00.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="boardNum">
+                                11
+                            </td>
+                            <td class="boardType buyer">
+                                Buyer
+                            </td>
+                            <td class="boardTitle">
+                                <i class="icon xi-lock-o"></i>
+                                업로드 타이틀
+                            </td>
+                            <td class="boardWriter">
+                                작성자
+                            </td>
+                            <td class="boardDate">
+                                2022.00.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="boardNum">
+                                10
+                            </td>
+                            <td class="boardType seller">
+                                Seller
+                            </td>
+                            <td class="boardTitle">
+                                <i class="icon xi-lock-o"></i>
+                                업로드 타이틀
+                            </td>
+                            <td class="boardWriter">
+                                작성자
+                            </td>
+                            <td class="boardDate">
+                                2022.00.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="boardNum">
+                                09
+                            </td>
+                            <td class="boardType seller">
+                                Seller
+                            </td>
+                            <td class="boardTitle">
+                                <i class="icon xi-lock-o"></i>
+                                업로드 타이틀
+                            </td>
+                            <td class="boardWriter">
+                                작성자
+                            </td>
+                            <td class="boardDate">
+                                2022.00.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="boardNum">
+                                08
+                            </td>
+                            <td class="boardType seller">
+                                Seller
+                            </td>
+                            <td class="boardTitle">
+                                <i class="icon xi-lock-o"></i>
+                                업로드 타이틀
+                            </td>
+                            <td class="boardWriter">
+                                작성자
+                            </td>
+                            <td class="boardDate">
+                                2022.00.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="boardNum">
+                                07
+                            </td>
+                            <td class="boardType seller">
+                                Seller
+                            </td>
+                            <td class="boardTitle">
+                                <i class="icon xi-lock-o"></i>
+                                업로드 타이틀
+                            </td>
+                            <td class="boardWriter">
+                                작성자
+                            </td>
+                            <td class="boardDate">
+                                2022.00.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="boardNum">
+                                06
+                            </td>
+                            <td class="boardType seller">
+                                Seller
+                            </td>
+                            <td class="boardTitle">
+                                <i class="icon xi-lock-o"></i>
+                                업로드 타이틀
+                            </td>
+                            <td class="boardWriter">
+                                작성자
+                            </td>
+                            <td class="boardDate">
+                                2022.00.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="boardNum">
+                                05
+                            </td>
+                            <td class="boardType seller">
+                                Seller
+                            </td>
+                            <td class="boardTitle">
+                                <i class="icon xi-lock-o"></i>
+                                업로드 타이틀
+                            </td>
+                            <td class="boardWriter">
+                                작성자
+                            </td>
+                            <td class="boardDate">
+                                2022.00.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="boardNum">
+                                04
+                            </td>
+                            <td class="boardType seller">
+                                Seller
+                            </td>
+                            <td class="boardTitle">
+                                <i class="icon xi-lock-o"></i>
+                                업로드 타이틀
+                            </td>
+                            <td class="boardWriter">
+                                작성자
+                            </td>
+                            <td class="boardDate">
+                                2022.00.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="boardNum">
+                                03
+                            </td>
+                            <td class="boardType seller">
+                                Seller
+                            </td>
+                            <td class="boardTitle">
+                                <i class="icon xi-lock-o"></i>
+                                업로드 타이틀
+                            </td>
+                            <td class="boardWriter">
+                                작성자
+                            </td>
+                            <td class="boardDate">
+                                2022.00.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="boardNum">
+                                02
+                            </td>
+                            <td class="boardType seller">
+                                Seller
+                            </td>
+                            <td class="boardTitle">
+                                <i class="icon xi-lock-o"></i>
+                                업로드 타이틀
+                            </td>
+                            <td class="boardWriter">
+                                작성자
+                            </td>
+                            <td class="boardDate">
+                                2022.00.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="boardNum">
+                                01
+                            </td>
+                            <td class="boardType seller">
+                                Seller
+                            </td>
+                            <td class="boardTitle">
+                                <i class="icon xi-lock-o"></i>
+                                업로드 타이틀
+                            </td>
+                            <td class="boardWriter">
+                                작성자
+                            </td>
+                            <td class="boardDate">
+                                2022.00.00
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="mt50"></div>
+            </div>
+            <!-- board -->
+            <div class="mt100"></div>
+            <div class="paging">
+                <p>
+                    <a href="#none" class="fisrt">&lt;&lt;</a>
+                    <a href="#none">&lt;</a>
+                </p>
+                <ol>
+                    <li><a href="buyer.html" class="this">1</a></li>
+                    <li><a href="#" class="other">2</a></li>
+                    <li><a href="#" class="other">3</a></li>
+                    <li><a href="#" class="other">4</a></li>
+                </ol>
+                <p>
+                    <a href="#none">&gt;</a>
+                    <a href="#none" class="last">&gt;&gt;</a>
+                </p>
+            </div>
+            <!-- paging -->
+        </div>
+        <!-- content -->
+        <div class="mt150"></div>
+        <footer class="clearfix">
+            <div class="footer-inner">
+                <div class="mt30"></div>
+                <div class="foot-inner1">
+                    <ul>
+                        <li>E-mail.</li>
+                        <li>palldaofficial@gmail.com</li>
+                    </ul>
+                    <ul>
+                        <li>Address.</li>
+                        <li>45, Centurm dong-ro, Haeundae-gu, Busan, Republic of Korea</li>
+                    </ul>
+                    <ul>
+                        <li>Tel.</li>
+                        <li>82+10 - 4690 - 6316</li>
+                    </ul>
+                </div>
+                <!-- foot-inner1 -->
+                <div class="foot-inner2">
+                    <h1><img src="../iamges/logo.svg" alt="logo"></h1>
+                </div>
+                <!-- foot-inner2 -->
+            </div>
+            <!-- footer-inner -->
+            <div class="mt30"></div>
+        </footer>
+        <!-- footer -->
+        <div class="quick">
+            <ul>
+                <li class="b2bbtn">
+                    <a href="../../eng/index.html" target="_blank">
+                        <i class="icon xi-arrow-up xi-2x"></i>
+                        <span>B2B</span>
+                    </a>
+                </li>
+                <!-- b2bbtn -->
+                <div class="mt10"></div>
+                <li class="topbtn">
+                    <a href="#"><i class="icon xi-arrow-up xi-2x"></i><span>TOP</span></a>
+                </li>
+                <!-- topbtn -->
+            </ul>
+        </div>
+        <!-- quick -->
+    </div>
+    <!-- wrap -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>
