@@ -2521,10 +2521,9 @@ footer {
 }
 
 .board table {
-    max-width: 100%;
-    width: 1200px;
+    max-width: 100%;    
+    width: 1000px;
     margin: auto;
-    overflow: hidden;
     height: 100%;
 }
 
