@@ -2513,7 +2513,6 @@ footer {
 /*------------------------------------ upload start ------------------------------------*/
 .board {
     max-width: 100%;
-    width: 1200px;
     margin: auto;
     overflow: hidden;
     display: block;
