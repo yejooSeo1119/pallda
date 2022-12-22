@@ -128,6 +128,11 @@ img {
 }
 
 button {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
     border: none;
 }
 
@@ -234,6 +239,7 @@ i.icon {
 
 form {
     max-width: 100%;
+    width: 400px;
     height: 100%;
 }
 
@@ -255,7 +261,7 @@ button {
 textarea,
 select,
 button,
-table{
+table {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
     line-height: 1.5em;
@@ -264,11 +270,13 @@ table{
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 input::placeholder,
 textarea::placeholder {
     color: #999999;
     font-size: 13px;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="file"],
@@ -279,6 +287,7 @@ select {
     padding: 0 0 0 3px;
     vertical-align: top;
 }
+
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -634,6 +643,7 @@ input[type="button"] {
     .user li a {
         color: #fff;
     }
+
     .lang-box {
         position: absolute;
         z-index: 4;
@@ -641,7 +651,7 @@ input[type="button"] {
         top: 80%;
     }
 
-    .lang-btn{
+    .lang-btn {
         font-size: 16px;
         font-weight: 500;
         color: #fff;
@@ -661,7 +671,7 @@ input[type="button"] {
 
     .nav a:hover,
     .lang-btn:hover,
-    .lang-btn.active:hover{
+    .lang-btn.active:hover {
         background-color: #000;
         color: #548292;
         text-shadow: 0px 0px 6px rgba(84, 130, 146, 0.7);
@@ -680,13 +690,14 @@ input[type="button"] {
     .lang-btn i.icon {
         position: absolute;
         top: 50%;
-        left:  10px;
+        left: 10px;
         transform: translateY(-50%);
     }
 
     .lang-btn i.icon::before {
         content: "\e9d1";
     }
+
     .heaberMobile {
         display: none;
     }
@@ -740,7 +751,7 @@ input[type="button"] {
         top: 8px;
     }
 
-    .lang-btn{
+    .lang-btn {
         font-size: 16px;
         font-weight: 500;
         color: #fff;
@@ -760,7 +771,7 @@ input[type="button"] {
 
     .nav a:hover,
     .lang-btn:hover,
-    .lang-btn.active:hover{
+    .lang-btn.active:hover {
         background-color: #000;
         color: #548292;
         text-shadow: 0px 0px 6px rgba(84, 130, 146, 0.7);
@@ -779,7 +790,7 @@ input[type="button"] {
     .lang-btn i.icon {
         position: absolute;
         top: 50%;
-        left:  10px;
+        left: 10px;
         transform: translateY(-50%);
     }
 
@@ -955,7 +966,7 @@ input[type="button"] {
         top: 20px;
     }
 
-    .lang-btn{
+    .lang-btn {
         font-size: 16px;
         font-weight: 500;
         color: #fff;
@@ -975,7 +986,7 @@ input[type="button"] {
 
     .nav a:hover,
     .lang-btn:hover,
-    .lang-btn.active:hover{
+    .lang-btn.active:hover {
         background-color: #000;
         color: #548292;
         text-shadow: 0px 0px 6px rgba(84, 130, 146, 0.7);
@@ -994,7 +1005,7 @@ input[type="button"] {
     .lang-btn i.icon {
         position: absolute;
         top: 50%;
-        left:  10px;
+        left: 10px;
         transform: translateY(-50%);
     }
 
@@ -1358,9 +1369,11 @@ input[type="button"] {
         background-color: #fff;
         text-align: center;
     }
-    div.item1.linebox{
+
+    div.item1.linebox {
         margin-top: 8px;
     }
+
     .linebox span :nth-child(1) {
         margin: auto;
     }
@@ -1456,9 +1469,11 @@ input[type="button"] {
         background-color: #fff;
         text-align: center;
     }
-    div.item1.linebox{
+
+    div.item1.linebox {
         margin-top: 8px;
     }
+
     .linebox span :nth-child(1) {
         margin: auto;
     }
@@ -1634,80 +1649,95 @@ footer {
 /*------------------------------------ footer end ------------------------------------*/
 
 /* quickbtn */
-.quick{
-    position: fixed;    
+.quick {
+    position: fixed;
     z-index: 999;
     box-sizing: border-box;
-    }
-.topbtn, .b2bbtn{
-    width: 50px; 
+}
+
+.topbtn,
+.b2bbtn {
+    width: 50px;
     height: 50px;
     display: block;
     padding: 10px;
     border-radius: 50px;
     background-color: #fff;
-    border:1px solid #ededed;
+    border: 1px solid #ededed;
     box-shadow: 0px 1px 3px #dedede;
     transition: background-color 0.3s ease;
 }
-.b2bbtn i.icon{
+
+.b2bbtn i.icon {
     transform: rotate(45deg);
 }
-.topbtn:hover, .b2bbtn:hover{
+
+.topbtn:hover,
+.b2bbtn:hover {
     background-color: #1b3745;
 }
-.topbtn:hover span,.topbtn:hover i, .b2bbtn:hover span{
+
+.topbtn:hover span,
+.topbtn:hover i,
+.b2bbtn:hover span {
     color: #fff;
 }
+
 @media screen and (min-width: 1200px) {
-    .quick{
+    .quick {
         position: fixed;
         bottom: 5%;
-        right: 2%;        
+        right: 2%;
         width: 65px;
         box-sizing: border-box;
     }
-    .quick li{
+
+    .quick li {
         width: 100%;
         height: 50%;
         text-align: center;
         box-sizing: border-box;
     }
+
     .quick i.icon {
         display: block;
         width: 100%;
         text-align: center;
         line-height: 20px;
     }
+
     .quick span {
         display: block;
         width: 100%;
         text-align: center;
         font-size: 15px;
     }
-   
+
 }
 
 @media screen and (min-width: 751px) and (max-width: 1199px) {
-    .quick{
+    .quick {
         position: fixed;
         bottom: 5%;
-        right: 2%;        
+        right: 2%;
         width: 65px;
         box-sizing: border-box;
     }
-    .quick li{
+
+    .quick li {
         width: 100%;
         height: 50%;
         text-align: center;
         box-sizing: border-box;
     }
+
     .quick i.icon {
         display: block;
         width: 100%;
         text-align: center;
         line-height: 20px;
     }
+
     .quick span {
         display: block;
         width: 100%;
@@ -1718,21 +1748,24 @@ footer {
 
 
 @media screen and (max-width: 750px) {
-    .quick{
+    .quick {
         position: fixed;
         bottom: 5%;
-        right: 2%;        
+        right: 2%;
         width: 50px;
     }
-    .quick li{
+
+    .quick li {
         width: 100%;
         height: 50px;
         text-align: center;
         box-sizing: border-box;
     }
-    .topbtn{    
+
+    .topbtn {
         position: relative;
     }
+
     .topbtn i.icon {
         display: block;
         width: 100%;
@@ -1741,21 +1774,24 @@ footer {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
-    .b2bbtn i.icon{
-        display: block;   
+
+    .b2bbtn i.icon {
+        display: block;
         position: absolute;
         top: 2%;
         left: 20%;
         transform: rotate(45deg);
     }
-    .b2bbtn span{
+
+    .b2bbtn span {
         position: absolute;
         top: 23%;
         left: 25%;
         font-size: 13px;
     }
+
     .topbtn span {
         display: none;
     }
@@ -1947,7 +1983,7 @@ footer {
         position: relative;
         max-width: 100%;
         width: 700px;
-         overflow: hidden;
+        overflow: hidden;
         margin: auto;
         padding-top: 150px;
     }
@@ -2327,11 +2363,12 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
-    #detail-wrap .content .itembox1{
+    #detail-wrap .content .itembox1 {
         width: 400px;
         overflow: hidden;
         margin: auto;
     }
+
     #detail-wrap .content .imgbox {
         width: 100%;
         margin: auto;
@@ -2595,20 +2632,23 @@ footer {
     border-top: 1px solid #ededed;
     padding: 0 10px;
 }
-.filebox li{
+
+.filebox li {
     margin-bottom: 10px;
     position: relative;
     width: 300px;
     max-width: 100%;
-    
+
 }
-.filebox li span.file{
+
+.filebox li span.file {
     width: 200px;
     max-width: 100%;
     height: 30px;
     display: inline-block;
 }
-.filebox li a{
+
+.filebox li a {
     padding: 0 10px;
     height: 30px;
     line-height: 30px;
@@ -2618,6 +2658,7 @@ footer {
     top: 0;
     left: 210px;
 }
+
 #upload-inner-wrap .content button,
 #news-inner-wrap .content button {
     width: 80px;
@@ -3178,7 +3219,7 @@ button.writeSumbit:hover {
 /*----------------------------------------- sign start-----------------------------------------*/
 
 .sign {
-    width: 600px;
+    width: 400px;
     max-width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
@@ -3187,14 +3228,14 @@ button.writeSumbit:hover {
 
 .signtitle {
     font-size: 20px;
-    width: 600px;
+    width: 400px;
     max-width: 100%;
     padding-bottom: 30px;
     border-bottom: 2px solid #1b3745;
 }
 
 .sign .type {
-    width: 600px;
+    width: 400px;
     max-width: 100%;
     margin: auto;
     table-layout: fixed;
@@ -3203,7 +3244,7 @@ button.writeSumbit:hover {
 
 /* tab */
 .sign .tabbox .tab-tit {
-    width: 600px;
+    width: 400px;
     max-width: 100%;
     margin: auto;
     display: block;
@@ -3235,7 +3276,7 @@ button.writeSumbit:hover {
 
 /* tab-content */
 .sign .type .cnt {
-    width: 600px;
+    width: 400px;
     max-width: 100%;
     display: none;
 }
@@ -3246,14 +3287,14 @@ button.writeSumbit:hover {
 
 .sign .write {
     box-sizing: border-box;
-    width: 600px;
+    width: 400px;
     max-width: 100%;
     margin: 0px auto;
 }
 
 table {
     border-spacing: 0;
-    width: 600px;
+    width: 400px;
     max-width: 100%;
     box-sizing: border-box;
 }
@@ -3317,7 +3358,8 @@ table .radio label.right {
     color: #b30000;
     display: block;
 }
-.ele{
+
+.ele {
     display: inline-block;
     width: 5%;
     height: 44px;
@@ -3325,10 +3367,12 @@ table .radio label.right {
     text-align: center;
     color: inherit;
 }
+
 .type input::placeholder {
     font-size: 11.6px;
 }
-.write table td p{
+
+.write table td p {
     color: #999;
     font-size: 13px;
     padding-left: 5px;
@@ -3370,10 +3414,12 @@ table .btn:hover {
 .agreement p input {
     width: 20px;
 }
+
 .agreement p label {
     font-weight: 400;
     font-size: 14px;
 }
+
 .agreement span {
     max-width: 100%;
     width: 500px;
