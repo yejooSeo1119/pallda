@@ -127,11 +127,9 @@ img {
     border: 0;
 }
 
-button {
+button , select {
     -moz-appearance: none;
-    /* Firefox */
     -webkit-appearance: none;
-    /* Safari and Chrome */
     appearance: none;
     border: none;
 }
@@ -2581,12 +2579,18 @@ footer {
     line-height: 30px;
     display: inline;
 }
-
+p.type i.icon{
+    position: relative;
+    top: 0;
+    right: -95px;
+}
 .selectbox select.boardType {
     width: 100px;
     height: 30px;
-    margin-left: 10px;
+    padding-left: 10px;
     border-radius: 0;
+    border: 1px solid #000;
+    border-radius: 3px;
 }
 
 .selectbox button.write {
@@ -2622,6 +2626,7 @@ footer {
     .board {
         max-width: 100%;
         width: 400px;
+        overflow: hidden;
         margin: auto;
         display: block;
         padding: 0 10px;
@@ -3609,6 +3614,12 @@ table .btn:hover {
 
 
 @media screen and (max-width: 750px) {
+    .sign, .signtitle, .sign .type, .sign .tabbox .tab-tit, table {
+        width: 400px;
+    }
+    .sign .write {
+        width: 360px;
+    }
 }
 
 /*----------------------------------------- sign end-----------------------------------------*/
