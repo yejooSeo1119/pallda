@@ -1,3 +1,8 @@
+/*------------------------------------ b2b css ------------------------------------*/
+
+
+
+
 /*------------------------------------ reset start ------------------------------------*/
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
@@ -332,7 +337,7 @@ input[type="radio"] {
 
 input[type="radio"]:checked {
     border: 1px solid #fff;
-    background-color: #1b3745;
+    background-color: #008b42;
     outline: 1px solid #000;
 }
 
@@ -806,7 +811,7 @@ input[type="button"] {
     .lang-btn:hover,
     .lang-btn.active:hover {
         background-color: #000;
-        color: #548292;
+        color: #008b42;
         text-shadow: 0px 0px 6px rgba(84, 130, 146, 0.7);
     }
 
@@ -910,7 +915,7 @@ input[type="button"] {
     .gnb li a:hover,
     .mo-login li a:hover {
         background-color: #000;
-        color: #548292;
+        color: #008b42;
         text-shadow: 0px 0px 6px rgba(84, 130, 146, 0.7);
     }
 
@@ -1021,7 +1026,7 @@ input[type="button"] {
     .lang-btn:hover,
     .lang-btn.active:hover {
         background-color: #000;
-        color: #548292;
+        color: #008b42;
         text-shadow: 0px 0px 6px rgba(84, 130, 146, 0.7);
     }
 
@@ -1120,7 +1125,7 @@ input[type="button"] {
     .gnb li a:hover,
     .mo-login li a:hover {
         background-color: #000;
-        color: #548292;
+        color: #008b42;
         text-shadow: 0px 0px 6px rgba(84, 130, 146, 0.7);
     }
 
@@ -1707,7 +1712,7 @@ footer {
 
 .topbtn:hover,
 .b2bbtn:hover {
-    background-color: #1b3745;
+    background-color: #008b42;
 }
 
 .topbtn:hover span,
@@ -2198,7 +2203,7 @@ footer {
 }
 
 .productList button:hover {
-    background-color: #1b3745;
+    background-color: #008b42;
     color: #fff;
 }
 
@@ -2551,8 +2556,8 @@ footer {
     margin: auto;
     display: block;
     padding: 0 10px;
-    border-top: 2px solid #1b3745;
-    border-bottom: 2px solid #1b3745;
+    border-top: 2px solid #008b42;
+    border-bottom: 2px solid #008b42;
 }
 
 .board table {
@@ -2607,7 +2612,7 @@ p.type i.icon{
 }
 
 .selectbox button.write:hover {
-    background-color: #1b3745;
+    background-color: #008b42;
     color: #fff;
 }
 
@@ -2634,8 +2639,8 @@ p.type i.icon{
         margin: auto;
         display: block;
         padding: 0 10px;
-        border-top: 2px solid #1b3745;
-        border-bottom: 2px solid #1b3745;
+        border-top: 2px solid #008b42;
+        border-bottom: 2px solid #008b42;
     }
     
     .board table {
@@ -2684,7 +2689,7 @@ p.type i.icon{
     }
     
     .selectbox button.write:hover {
-        background-color: #1b3745;
+        background-color: #008b42;
         color: #fff;
     }
     
@@ -2888,7 +2893,7 @@ button.writeSumbit {
 }
 
 button.writeSumbit:hover {
-    background-color: #1b3745;
+    background-color: #008b42;
     color: #fff;
 }
 
@@ -3227,7 +3232,7 @@ button.writeSumbit:hover {
 }
 
 #login-wrap #btn a:hover {
-    background-color: #1b3745;
+    background-color: #008b42;
     color: #fff;
 }
 
@@ -3273,7 +3278,7 @@ button.writeSumbit:hover {
 }
 
 #find-wrap .findUser .tab li.current a {
-    background-color: #1b3745;
+    background-color: #008b42;
     color: #fff;
 }
 
@@ -3321,7 +3326,7 @@ button.writeSumbit:hover {
 }
 
 .findUser .btn a:hover {
-    background-color: #1b3745;
+    background-color: #008b42;
     color: #fff;
 }
 
@@ -3346,7 +3351,7 @@ button.writeSumbit:hover {
     width: 800px;
     max-width: 100%;
     padding-bottom: 30px;
-    border-bottom: 2px solid #1b3745;
+    border-bottom: 2px solid #008b42;
 }
 
 .sign .type {
@@ -3375,7 +3380,7 @@ button.writeSumbit:hover {
 }
 
 .sign .tabbox .tab-tit li a.on {
-    background-color: #1b3745;
+    background-color: #008b42;
     color: #fff;
     display: block;
 }
@@ -3442,7 +3447,7 @@ table th {
     font-weight: normal;
     text-align: right;
     padding: 10px 3px 10px 0;
-    line-height: 50px;
+    line-height: 1;
 }
 
 .type table td,
@@ -3506,7 +3511,7 @@ table .btn {
 
 table .btn:hover {
     color: #fff;
-    background-color: #1b3745;
+    background-color: #008b42;
 }
 
 
@@ -3592,7 +3597,7 @@ table .btn:hover {
 }
 
 .sign-btn ul li a.check {
-    background-color: #1b3745;
+    background-color: #008b42;
     border: 1px solid transparent;
     transition: all 0.3s;
 }
@@ -3612,16 +3617,16 @@ table .btn:hover {
 .sign-btn ul li a.check:hover,
 .sign-btn ul li a.cancle:hover {
     background: #fff;
-    border-color: #1b3745;
+    border-color: #008b42;
     color: #191919 !important;
 }
 
 
 @media screen and (max-width: 750px) {
-    .sign, .signtitle, .sign .type, .sign .tabbox .tab-tit, table {
+    .sign, .signtitle, .sign .type, .sign .tabbox .tab-tit{
         width: 400px;
     }
-    .sign .write {
+    .sign .write,  table {
         width: 360px;
     }
 }
