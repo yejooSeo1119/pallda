@@ -1,5 +1,9 @@
+/*------------------------------------ b2c css ------------------------------------*/
+
+
+
 /*------------------------------------ reset start ------------------------------------*/
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 .notosanskr * {
     font-family: 'Noto Sans KR', sans-serif;
@@ -630,7 +634,7 @@ input[type="button"] {
         width: 10%;
         position: absolute;
         top: 50%;
-        right: 12%;
+        right: 12.5%;
     }
 
     .user li {
@@ -642,12 +646,13 @@ input[type="button"] {
 
     .user li a {
         color: #fff;
+        transition: all 0.2s ease;
     }
 
     .lang-box {
         position: absolute;
         z-index: 4;
-        right: 3%;
+        right: 0%;
         top: 80%;
     }
 
@@ -671,9 +676,11 @@ input[type="button"] {
 
     .nav a:hover,
     .lang-btn:hover,
-    .lang-btn.active:hover {
+    .lang-btn.active:hover,
+    .cart-box i:hover,
+    ul.user li a:hover {
         background-color: #000;
-        color: #548292;
+        color: #008b42;
         text-shadow: 0px 0px 6px rgba(84, 130, 146, 0.7);
     }
 
@@ -697,15 +704,19 @@ input[type="button"] {
     .lang-btn i.icon::before {
         content: "\e9d1";
     }
-    .cart-box{
+
+    .cart-box {
         position: absolute;
         z-index: 4;
-        right: 0%;
+        right: 10%;
         top: 90%;
     }
-    .cart-box i{
+
+    .cart-box i {
         color: #fff;
+        transition: all 0.2s ease;
     }
+
     .heaberMobile {
         display: none;
     }
@@ -781,7 +792,7 @@ input[type="button"] {
     .lang-btn:hover,
     .lang-btn.active:hover {
         background-color: #000;
-        color: #548292;
+        color: #008b42;
         text-shadow: 0px 0px 6px rgba(84, 130, 146, 0.7);
     }
 
@@ -805,7 +816,6 @@ input[type="button"] {
     .lang-btn i.icon::before {
         content: "\e9d1";
     }
-
     /* menubox */
 
     .menuBtn .open {
@@ -885,7 +895,7 @@ input[type="button"] {
     .gnb li a:hover,
     .mo-login li a:hover {
         background-color: #000;
-        color: #548292;
+        color: #008b42;
         text-shadow: 0px 0px 6px rgba(84, 130, 146, 0.7);
     }
 
@@ -996,7 +1006,7 @@ input[type="button"] {
     .lang-btn:hover,
     .lang-btn.active:hover {
         background-color: #000;
-        color: #548292;
+        color: #008b42;
         text-shadow: 0px 0px 6px rgba(84, 130, 146, 0.7);
     }
 
@@ -1095,7 +1105,7 @@ input[type="button"] {
     .gnb li a:hover,
     .mo-login li a:hover {
         background-color: #000;
-        color: #548292;
+        color: #008b42;
         text-shadow: 0px 0px 6px rgba(84, 130, 146, 0.7);
     }
 
@@ -1687,7 +1697,8 @@ footer {
 
 .topbtn:hover span,
 .topbtn:hover i,
-.b2bbtn:hover span {
+.b2bbtn:hover span,
+.b2bbtn:hover i {
     color: #fff;
 }
 
@@ -2306,26 +2317,29 @@ footer {
 /*------------------------------------ detail start ------------------------------------*/
 
 
-.textbox .item3{
+.textbox .item3 {
     width: 100%;
     height: 50px;
     position: relative;
 }
-.textbox .item3 a{
+
+.textbox .item3 a {
     display: inline-block;
     width: 48%;
     height: 100%;
     line-height: 50px;
-    text-align: center;        
+    text-align: center;
     box-sizing: border-box;
 }
-.textbox .item3 a:nth-child(1){
+
+.textbox .item3 a:nth-child(1) {
     margin-right: 2%;
     background-color: #008b42;
     border: 0;
     color: #fff;
 }
-.textbox .item3 a:nth-child(2){
+
+.textbox .item3 a:nth-child(2) {
     border: 2px solid #008b42;
     position: absolute;
 }
@@ -2553,7 +2567,7 @@ footer {
 }
 
 .board table {
-    max-width: 100%;    
+    max-width: 100%;
     width: 1000px;
     margin: auto;
     height: 100%;
@@ -2618,6 +2632,82 @@ footer {
 }
 
 
+@media screen and (max-width: 750px) {
+    .board {
+        max-width: 100%;
+        width: 400px;
+        margin: auto;
+        display: block;
+        padding: 0 10px;
+        border-top: 2px solid #1b3745;
+        border-bottom: 2px solid #1b3745;
+    }
+    
+    .board table {
+        max-width: 100%;    
+        width: 400px;
+        margin: auto;
+        height: 100%;
+    }
+    
+    .board select {
+        background-color: transparent;
+        border: 0;
+    }
+    
+    .board select option {
+        text-align: left;
+    }
+    
+    .selectbox {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .selectbox p.type {
+        width: 50px;
+        height: 30px;
+        line-height: 30px;
+        display: inline;
+    }
+    
+    .selectbox select.boardType {
+        width: 100px;
+        height: 30px;
+        margin-left: 10px;
+        border-radius: 0;
+    }
+    
+    .selectbox button.write {
+        width: 100px;
+        float: right;
+        margin-top: -10px;
+        background-color: transparent;
+        border: 1px solid #000;
+        transition: background-color 0.3s ease;
+    }
+    
+    .selectbox button.write:hover {
+        background-color: #008b42;
+        color: #fff;
+    }
+    
+    .board table th {
+        text-align: center;
+        border-top: 1px solid #ededed;
+    }
+    
+    .board table td {
+        border-bottom: 1px solid #ededed;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+    
+    .boardList {
+        text-align: center;
+    }
+}
 /*------------------------------------ upload end ------------------------------------*/
 
 
@@ -3560,18 +3650,327 @@ table .btn:hover {
 
 /*------------------------------------ cart start
 -----------------------------------*/
-#cart-wrap .cartbox{
+#cart-wrap .content {
     width: 1200px;
     max-width: 100%;
 }
-#cart-wrap .cartbox .item{
+
+#cart-wrap .cartbox .item {
     width: 100%;
     margin: auto;
 }
-#cart-wrap .cartbox .empty p{
+
+#cart-wrap .cartbox .empty p {
     text-align: center;
     font-size: 16px;
 }
+
+.cartbox {
+    width: 60%;
+    margin-left: -20px;
+    padding-right: 30px;
+    float: left;
+    margin-bottom: 100px;
+}
+
+table.boardOrder tr {
+    border-top: 0px solid #767676;
+    border-bottom: 1px solid #767676;
+}
+
+table.boardOrder thead th {
+    display: none;
+}
+
+table.boardOrder thead th:first-of-type {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+table.boardOrder th {
+    padding: 9px 0 7px;
+}
+
+table.boardOrder thead th {
+    display: none;
+}
+
+.inputCheck {
+    left: 0px;
+    float: left;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+table.boardOrder th span:last-of-type {
+    float: left;
+    width: 80px !important;
+    height: 18px !important;
+    margin: -19px 0 20px 10px;
+    color: #000;
+}
+
+.cartbox .oderList {
+    margin: 0px 0 -1px;
+}
+
+.cartbox table.boardOrder {
+    table-layout: fixed;
+    width: 100%;
+}
+
+tbody.oder-list tr:first-of-type {
+    border-top: 1px solid #777;
+}
+
+tbody.oder-list tr {
+    border-bottom: 1px solid #777;
+    position: relative;
+}
+
+table.boardOrder td {
+    padding: 10px 0;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.5;
+    position: relative;
+}
+
+.boardOrder .thumb {
+    padding: 15px 15px 15px 0;
+}
+
+.boardOrder .thumb a {
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.boardOrder .thumb img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+td.product-info {
+    padding-right: 35px;
+}
+
+.boardOrder td.product-info .prd-name-wrap .prd_name {
+    font-weight: normal;
+    position: relative;
+    min-width: 100px;
+}
+
+.boardOrder td.product-info .prd_name_wrap .prd_name>a:first-of-type {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.product a.remove {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    text-decoration: underline;
+}
+
+.boardOrder td.product-info *:not(.btn) {
+    color: #000;
+}
+
+.boardOrder .quantity {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.boardOrder .quantity fieldset {
+    float: left;
+    width: 78px;
+    height: 24px;
+    border: 1px solid #777;
+    position: relative;
+}
+
+.boardOrder .quantity fieldset a {
+    display: inline-block;
+    width: 25px;
+    height: 100%;
+    border-left: 1px solid #777;
+}
+
+.boardOrder .quantity fieldset a.qty-down {
+    right: 25px !important;
+}
+
+.boardOrder .quantity fieldset a::before,
+.boardOrder .quantity fieldset a::after {
+    content: '';
+    width: 10px;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 0 32px;
+}
+
+.boardOrder .quantity fieldset a.qty-up::after {
+    height: 10px;
+    width: 1px;
+}
+
+.boardOrder .quantity input {
+    width: 25px !important;
+    height: 100%;
+    text-align: center;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.boardOrder .quantity fieldset a.qty-up,
+.boardOrder .quantity fieldset a.qty-down {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* countbox */
+.countbox {
+    width: 24%;
+    max-width: 100%;
+    float: right;
+    margin-right: 50px;
+}
+
+.order-totalsummary {
+    margin: 35px 0 20px 0;
+    padding: 20px 0 0 0;
+    line-height: 1.5;
+    clear: both;
+    float: left;
+    width: 100%;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+}
+
+.order-totalsummary ul {
+    float: left;
+    width: 100%;
+}
+
+.order-totalsummary li {
+    overflow: hidden;
+    padding: 0;
+    border-left: 0 !important;
+    color: #000;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.botton-btn-wrap span.total {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+
+.botton-btn-wrap li strong {
+    font-size: 16px;
+}
+
+/* btnArea */
+
+.btnArea {
+    position: relative;
+    margin: 0 0 40px !important;
+    padding: 0;
+    width: 100%;
+}
+
+.btnArea .btn {
+    width: 100% !important;
+    margin: 0 0 10px 0;
+    position: relative;
+    width: 150px;
+    padding: 16px 5px;
+    font-size: 14px;
+    border: 1px solid #777;
+    border-radius: 0;
+    font-weight: normal;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1;
+    z-index: 1;
+    display: inline-block;
+    zoom: 1;
+}
+
+.btnArea .s-btn {
+    position: relative;
+    width: 150px;
+    padding: 16px 5px;
+    font-size: 14px;
+    color: #fff;
+    background: #000;
+    border: 1px solid #777;
+    border-radius: 0;
+    font-weight: normal;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1;
+    z-index: 1;
+    display: inline-block;
+    zoom: 1;
+}
+
+@media screen and (min-width: 751px) and (max-width: 1199px) {
+    #cart-wrap .content {
+        width: 700px;
+        max-width: 100%;
+    }
+
+    .cartbox {
+        width: 100%;
+        margin: auto;
+        box-sizing: border-box;
+        margin-bottom: 100px;
+    }
+
+    /* countbox */
+    .countbox {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #cart-wrap .content {
+        width: 400px;
+        max-width: 100%;
+    }
+
+    .cartbox {
+        width: 100%;
+        margin: auto;
+        box-sizing: border-box;
+        margin-bottom: 100px;
+    }
+
+    /* countbox */
+    .countbox {
+        width: 100%;
+        margin: auto;
+    }
+}
+
 /*------------------------------------ cart end
 -----------------------------------*/
 

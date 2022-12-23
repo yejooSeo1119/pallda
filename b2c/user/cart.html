@@ -5,12 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/xeicon.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="../css/xeicon.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>PALLDA</title>
 </head>
 
@@ -53,7 +50,7 @@
         <header class="heaberMobile">
             <nav>
                 <div class="nav-box">
-                    <h1><a href="../index.html"><img src="../iamges/logo.svg" alt="logo"></a></h1>
+                    <h1><a href="../index.html"><img src="../../iamges/logo.svg" alt="logo"></a></h1>
                     <!-- 로고 -->
                     <div class="lang-box">
                         <a href="../eng/index.html" target="_blank" class="lang-btn">
@@ -91,6 +88,192 @@
             </nav>
         </header>
         <!-- header -->
+        <div class="content">
+            <div class="mt150"></div>
+            <div class="title">
+                <h3>SHOPPING BAG</h3>
+            </div>
+            <div class="mt100"></div>
+            <div class="cartbox">
+                <div class="mt50"></div>
+                <div class="empty item displaynone">
+                    <p>Your shopping bag is empty.</p>
+                </div>
+                <!-- 장바구니 비었을 때 -->
+                <div class="oderList">
+                    <table class="boardOrder">
+                        <caption>Products</caption>
+                        <colgroup>
+                            <col width="35px">
+                            <col width="100px">
+                            <col width="auto">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <span class="inputCheck" style="margin: 0 50px 0 0;">
+                                        <input type="checkbox" style="margin: 0px;">
+                                        <label for=""></label></span>
+                                    <span>Select all</span>
+                                </th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody class="oder-list">
+                            <tr class="record">
+                                <td>
+                                    <span class="inputCheck" style="margin: 0 50px 0 0;">
+                                        <input type="checkbox" id="cartCheck" name="cartCheck" style="margin: 0px;">
+                                        <label for="cartCheck"></label>
+                                    </span>
+                                </td>
+                                <td class="thumb">
+                                    <a href="#none">
+                                        <img src="../iamges/about01.jpg" alt="상품이미지"
+                                            style="width: 85px; height: 115px;">
+                                    </a>
+                                </td>
+                                <!-- 상품이미지 -->
+                                <td class="product-info">
+                                    <div class="product">
+                                        <div class="prd-name-wrap">
+                                            <div class="prd-name">
+                                                <a href="#none">상품명</a>
+                                                <a href="#" class="remove">Delete</a>
+                                            </div>
+                                        </div>
+                                        <!-- prd-name -->
+                                        <div class="mt20"></div>
+                                        <div class="price-wrap">
+                                            <div class="salePrice">
+                                                100.25$
+                                            </div>
+                                        </div>
+                                        <!-- price -->
+                                    </div>
+                                    <!-- product -->
+                                    <div class="mt10"></div>
+                                    <div class="quantity">
+                                        <fieldset>
+                                            <span class="displaynone">Qty</span>
+                                            <a href="#" class="qty-down"></a>
+                                            <input type="text" id="quantity" name="quantity" size="2" value="1">
+                                            <a href="#" class="qty-up"></a>
+                                        </fieldset>
+                                        <!-- 수량변경  -->
+                                    </div>
+                                    <!-- quantity -->
+                                </td>
+                            </tr>
+                            <!-- record1 -->
+                            <tr class="record">
+                                <td>
+                                    <span class="inputCheck" style="margin: 0 50px 0 0;">
+                                        <input type="checkbox" id="cartCheck" name="cartCheck" style="margin: 0px;">
+                                        <label for="cartCheck"></label>
+                                    </span>
+                                </td>
+                                <td class="thumb">
+                                    <a href="#none">
+                                        <img src="../iamges/about01.jpg" alt="상품이미지"
+                                            style="width: 85px; height: 115px;">
+                                    </a>
+                                </td>
+                                <!-- 상품이미지 -->
+                                <td class="product-info">
+                                    <div class="product">
+                                        <div class="prd-name-wrap">
+                                            <div class="prd-name">
+                                                <a href="#none">상품명</a>
+                                                <a href="#" class="remove">Delete</a>
+                                            </div>
+                                        </div>
+                                        <!-- prd-name -->
+                                        <div class="mt20"></div>
+                                        <div class="price-wrap">
+                                            <div class="salePrice">
+                                                100.25$
+                                            </div>
+                                        </div>
+                                        <!-- price -->
+                                    </div>
+                                    <!-- product -->
+                                    <div class="mt10"></div>
+                                    <div class="quantity">
+                                        <fieldset>
+                                            <span class="displaynone">Qty</span>
+                                            <a href="#" class="qty-down"></a>
+                                            <input type="text" id="quantity" name="quantity" size="2" value="1">
+                                            <a href="#" class="qty-up"></a>
+                                        </fieldset>
+                                        <!-- 수량변경  -->
+                                    </div>
+                                    <!-- quantity -->
+                                </td>
+                            </tr>
+                            <!-- record2 -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- oderList -->
+                <div class="mt50"></div>
+            </div>
+            <!-- cartbox -->
+            <div class="countbox">
+                <div class="botton-btn-wrap">
+                    <!-- 주문 합계 -->
+                    <div class="order-totalsummary">
+                        <ul>
+                            <li class="price">
+                                <strong>Merchandise</strong>
+                                <span class="total">
+                                    $
+                                    <span class="total-price">
+                                        200.50
+                                    </span>
+                                </span>
+                            </li>
+                            <!-- price -->
+                            <li class="discount">
+                                <strong>Discount</strong>
+                                <span class="total">
+                                    -$
+                                    <span id="total-discount-price">
+                                        0
+                                    </span>
+                                </span>
+                            </li>
+                            <!-- discount -->
+                            <li class="total">
+                                <strong>Total Amount</strong>
+                                <span class="total">
+                                    $
+                                    <span id="total-order-price">
+                                        200.50
+                                    </span>
+                                </span>
+                            </li>
+                            <!-- total -->
+                        </ul>
+                    </div>
+                    <!-- order-totalsummary -->
+                    <!-- 주문 btn  -->
+                    <div class="btnArea">
+                        <a href="#none" class="fisrt btn line-btn">Delete All Items</a>
+                        <a href="#none" class="fisrt btn line-btn">Delete Selected Items</a>
+                        <a href="#none" class="btn s-btn">Order Selected Items</a>
+                        <!-- 비로그인 시 로그인 페이지로 이동 -->
+                        <a href="#none" class="btn s-btn">Order All Items</a>
+                    </div>
+                    <!-- btnArea -->
+                </div>
+                <!-- botton-btn-wrap -->
+            </div>
+            <!-- countbox -->
+        </div>
+        <!-- content -->
         <div class="mt150"></div>
         <footer class="clearfix">
             <div class="footer-inner">
@@ -123,6 +306,7 @@
             <ul>
                 <li class="b2bbtn">
                     <a href="../../index.html" target="_blank">
+                        <!-- b2b KOR -->
                         <i class="icon xi-arrow-up xi-2x"></i>
                         <span>B2B</span>
                     </a>
@@ -137,11 +321,12 @@
         </div>
         <!-- quick -->
     </div>
-    <!-- sign-wrap -->
+    <!-- wrap -->
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="../script/script.js"></script>
+
 </body>
 
 </html>
