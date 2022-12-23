@@ -239,10 +239,16 @@ i.icon {
 
 form {
     max-width: 100%;
-    width: 400px;
+    width: 800px;
     height: 100%;
 }
-
+@media screen and (max-width: 750px) {
+    form {
+        max-width: 100%;
+        width: 400px;
+        height: 100%;
+    }
+}
 input {
     font-size: inherit;
     font-weight: inherit;
@@ -480,10 +486,35 @@ input[type="button"] {
 .col90,
 .col95,
 .col100 {
+    max-width: 500px;
+    margin: 0px 2px;
+}
+@media screen and (max-width: 750px) {
+    .col10,
+.col15,
+.col20,
+.col25,
+.col30,
+.col33,
+.col35,
+.col40,
+.col45,
+.col50,
+.col55,
+.col60,
+.col65,
+.col66,
+.col70,
+.col75,
+.col80,
+.col85,
+.col90,
+.col95,
+.col100 {
     max-width: 400px;
     margin: 0px 2px;
 }
-
+}
 
 @keyframes fadeIn {
     0% {
@@ -3294,7 +3325,7 @@ button.writeSumbit:hover {
 /*----------------------------------------- sign start-----------------------------------------*/
 
 .sign {
-    width: 400px;
+    width: 800px;
     max-width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
@@ -3303,23 +3334,23 @@ button.writeSumbit:hover {
 
 .signtitle {
     font-size: 20px;
-    width: 400px;
+    width: 800px;
     max-width: 100%;
     padding-bottom: 30px;
     border-bottom: 2px solid #1b3745;
 }
 
 .sign .type {
-    width: 400px;
+    width: 780px;
     max-width: 100%;
-    margin: auto;
     table-layout: fixed;
     line-height: 180%;
+    box-sizing: border-box;
 }
 
 /* tab */
 .sign .tabbox .tab-tit {
-    width: 400px;
+    width: 500px;
     max-width: 100%;
     margin: auto;
     display: block;
@@ -3351,7 +3382,7 @@ button.writeSumbit:hover {
 
 /* tab-content */
 .sign .type .cnt {
-    width: 400px;
+    width: 800px;
     max-width: 100%;
     display: none;
 }
@@ -3362,14 +3393,14 @@ button.writeSumbit:hover {
 
 .sign .write {
     box-sizing: border-box;
-    width: 400px;
+    width: 800px;
     max-width: 100%;
     margin: 0px auto;
 }
 
 table {
     border-spacing: 0;
-    width: 400px;
+    width: 800px;
     max-width: 100%;
     box-sizing: border-box;
 }
@@ -3457,7 +3488,7 @@ table .btn {
     border: 1px solid #000;
     display: inline-block;
     height: 44px;
-    width: 80px;
+    width: 70px;
     text-align: center;
     line-height: 44px;
     border-radius: 3px;
@@ -3477,7 +3508,7 @@ table .btn:hover {
 
 .agreement {
     max-width: 100%;
-    width: 500px;
+    width: 700px;
     margin: auto;
 }
 
@@ -3497,7 +3528,7 @@ table .btn:hover {
 
 .agreement span {
     max-width: 100%;
-    width: 500px;
+    width: 700px;
     height: 200px;
     margin: auto;
     overflow-y: scroll;
@@ -3575,6 +3606,12 @@ table .btn:hover {
     border-color: #1b3745;
     color: #191919 !important;
 }
+
+
+@media screen and (max-width: 750px) {
+}
+
+/*----------------------------------------- sign end-----------------------------------------*/
 
 
 
