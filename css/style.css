@@ -274,7 +274,11 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
+@media screen and (max-width: 750px) {
+    table{
+        width: 350px !important;
+    }
+}
 input::placeholder,
 textarea::placeholder {
     color: #999999;
