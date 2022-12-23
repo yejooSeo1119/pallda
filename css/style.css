@@ -2336,16 +2336,32 @@ footer {
 
 /*------------------------------------ detail start ------------------------------------*/
 
-
+  /* 판매자 설명 */
+#detail-wrap .item2 .profile i.icon {
+    background-color: #ededed;
+    padding: 15px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+#detail-wrap .item2 .profile span.companyProfile{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 150px;
+    height: 100px;
+}
+span.companyProfile img{
+    width: 100%;
+}
 
 @media screen and (min-width: 1200px) {
 
-    #detail-wrap .content .itembox {
+    #detail-wrap .content .itembox{
         width: 100%;
         overflow: hidden;
     }
 
-    #detail-wrap .content .imgbox {
+    #detail-wrap .content .imgbox{
         width: 50%;
         float: left;
         margin: auto;
@@ -2367,13 +2383,7 @@ footer {
         max-height: 150px;
     }
 
-    #detail-wrap .item2 .profile i {
-        background-color: #ededed;
-        padding: 15px;
-        display: inline-block;
-        box-sizing: border-box;
-        border-radius: 50px;
-    }
+   
 }
 
 @media screen and (min-width: 751px) and (max-width: 1199px) {
