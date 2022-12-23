@@ -1679,7 +1679,8 @@ footer {
 
 .topbtn:hover span,
 .topbtn:hover i,
-.b2bbtn:hover span {
+.b2bbtn:hover span,
+.b2bbtn:hover i {
     color: #fff;
 }
 
@@ -2586,7 +2587,82 @@ footer {
     text-align: center;
 }
 
-
+@media screen and (max-width: 750px) {
+    .board {
+        max-width: 100%;
+        width: 400px;
+        margin: auto;
+        display: block;
+        padding: 0 10px;
+        border-top: 2px solid #1b3745;
+        border-bottom: 2px solid #1b3745;
+    }
+    
+    .board table {
+        max-width: 100%;    
+        width: 400px;
+        margin: auto;
+        height: 100%;
+    }
+    
+    .board select {
+        background-color: transparent;
+        border: 0;
+    }
+    
+    .board select option {
+        text-align: left;
+    }
+    
+    .selectbox {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .selectbox p.type {
+        width: 50px;
+        height: 30px;
+        line-height: 30px;
+        display: inline;
+    }
+    
+    .selectbox select.boardType {
+        width: 100px;
+        height: 30px;
+        margin-left: 10px;
+        border-radius: 0;
+    }
+    
+    .selectbox button.write {
+        width: 100px;
+        float: right;
+        margin-top: -10px;
+        background-color: transparent;
+        border: 1px solid #000;
+        transition: background-color 0.3s ease;
+    }
+    
+    .selectbox button.write:hover {
+        background-color: #1b3745;
+        color: #fff;
+    }
+    
+    .board table th {
+        text-align: center;
+        border-top: 1px solid #ededed;
+    }
+    
+    .board table td {
+        border-bottom: 1px solid #ededed;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+    
+    .boardList {
+        text-align: center;
+    }
+}
 /*------------------------------------ upload end ------------------------------------*/
 
 
