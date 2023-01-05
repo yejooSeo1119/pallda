@@ -132,7 +132,8 @@ img {
     border: 0;
 }
 
-button , select {
+button,
+select {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -245,6 +246,7 @@ form {
     width: 800px;
     height: 100%;
 }
+
 @media screen and (max-width: 750px) {
     form {
         max-width: 100%;
@@ -252,6 +254,7 @@ form {
         height: 100%;
     }
 }
+
 input {
     font-size: inherit;
     font-weight: inherit;
@@ -279,11 +282,13 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 @media screen and (max-width: 750px) {
-    table{
+    table {
         width: 350px !important;
     }
 }
+
 input::placeholder,
 textarea::placeholder {
     color: #999999;
@@ -496,31 +501,33 @@ input[type="button"] {
     max-width: 500px;
     margin: 0px 2px;
 }
+
 @media screen and (max-width: 750px) {
+
     .col10,
-.col15,
-.col20,
-.col25,
-.col30,
-.col33,
-.col35,
-.col40,
-.col45,
-.col50,
-.col55,
-.col60,
-.col65,
-.col66,
-.col70,
-.col75,
-.col80,
-.col85,
-.col90,
-.col95,
-.col100 {
-    max-width: 400px;
-    margin: 0px 2px;
-}
+    .col15,
+    .col20,
+    .col25,
+    .col30,
+    .col33,
+    .col35,
+    .col40,
+    .col45,
+    .col50,
+    .col55,
+    .col60,
+    .col65,
+    .col66,
+    .col70,
+    .col75,
+    .col80,
+    .col85,
+    .col90,
+    .col95,
+    .col100 {
+        max-width: 400px;
+        margin: 0px 2px;
+    }
 }
 
 @keyframes fadeIn {
@@ -2335,121 +2342,107 @@ footer {
 
 
 /*------------------------------------ detail start ------------------------------------*/
+.itembox1{
+    overflow: hidden;
+}
+.leftbox {
+    width: 50%;
+    height: 100%;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
 
-  /* 판매자 설명 */
-#detail-wrap .item2 .profile i.icon {
-    background-color: #ededed;
-    padding: 15px;
-    display: inline-block;
-    box-sizing: border-box;
-    border-radius: 50px;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 400px;
+    height: 400px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
-#detail-wrap .item2 .profile span.companyProfile{
-    display: inline-block;
-    box-sizing: border-box;
-    width: 150px;
-    height: 100px;
-}
-span.companyProfile img{
+
+.swiper-slide img {
+    display: block;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-@media screen and (min-width: 1200px) {
-
-    #detail-wrap .content .itembox{
-        width: 100%;
-        overflow: hidden;
-    }
-
-    #detail-wrap .content .imgbox{
-        width: 50%;
-        float: left;
-        margin: auto;
-    }
-
-    #detail-wrap .content .textbox {
-        width: 50%;
-        max-width: 600px;
-        float: left;
-    }
-
-    #detail-wrap .textbox .item1,
-    #detail-wrap .textbox .item2 {
-        height: 200px;
-    }
-
-    .textbox .item1 p,
-    .textbox .item2 p {
-        max-height: 150px;
-    }
-
-   
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media screen and (min-width: 751px) and (max-width: 1199px) {
-    #detail-wrap .content .imgbox {
-        width: 50%;
-        margin: auto;
-        margin-bottom: 50px;
-    }
-
-    #detail-wrap .content .textbox {
-        width: 50%;
-        margin: auto;
-    }
-
-    #detail-wrap .textbox .item1,
-    #detail-wrap .textbox .item2 {
-        width: 100%;
-        max-height: 150px;
-    }
-
-    .textbox .item1 p,
-    .textbox .item2 p {
-        width: 100%;
-        max-height: 150px;
-    }
+.swipe::after {
+    clear: both;
 }
 
-@media screen and (max-width: 750px) {
-    #detail-wrap .content .itembox1 {
-        width: 400px;
-        overflow: hidden;
-        margin: auto;
-    }
-
-    #detail-wrap .content .imgbox {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 50px;
-    }
-
-    #detail-wrap .content .textbox {
-        width: 100%;
-        margin: auto;
-    }
-
-    #detail-wrap .textbox .item1,
-    #detail-wrap .textbox .item2 {
-        width: 100%;
-        max-height: 150px;
-    }
-
-    .textbox .item1 p,
-    .textbox .item2 p {
-        width: 100%;
-        max-height: 150px;
-    }
+.mySwiper .next,
+.mySwiper .prev {
+    color: #000;
+    scale: 0.7;
+    opacity: 0.5;
+    transition: all 0.3s ease;
 }
+
+.mySwiper .next:hover,
+.mySwiper .prev:hover {
+    opacity: 1;
+}
+
+.mySwiper span.swiper-pagination-bullet {
+    background-color: #191919;
+}
+
+.rightbox {
+    width: 35%;
+    margin-left: 5%;
+    float: left;
+}
+
+.infoSub, .infoComSub{
+    height: 150px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.infoSub::-webkit-scrollbar, .infoComSub::-webkit-scrollbar {
+    display: none;
+}
+
+.infoCom {
+    width: 130px;
+}
+
+.infoCom img {
+    width: 100%;
+    display: block;
+}
+
 
 /* 댓글 */
-#detail-wrap .itembox2 {
+#detail-wrap .itembox2{
     background-color: #f9f9f9;
     padding: 50px;
     box-sizing: border-box;
     font-size: 15px;
+    clear: both;
 }
-
 .comment .comment-box {
     margin-left: 46px;
 }
@@ -2571,7 +2564,7 @@ span.companyProfile img{
 }
 
 .board table {
-    max-width: 100%;    
+    max-width: 100%;
     width: 1000px;
     margin: auto;
     height: 100%;
@@ -2598,11 +2591,13 @@ span.companyProfile img{
     line-height: 30px;
     display: inline;
 }
-p.type i.icon{
+
+p.type i.icon {
     position: relative;
     top: 0;
     right: -95px;
 }
+
 .selectbox select.boardType {
     width: 100px;
     height: 30px;
@@ -2652,43 +2647,43 @@ p.type i.icon{
         border-top: 2px solid #008b42;
         border-bottom: 2px solid #008b42;
     }
-    
+
     .board table {
-        max-width: 100%;    
+        max-width: 100%;
         width: 400px;
         margin: auto;
         height: 100%;
     }
-    
+
     .board select {
         background-color: transparent;
         border: 0;
     }
-    
+
     .board select option {
         text-align: left;
     }
-    
+
     .selectbox {
         width: 100%;
         display: block;
         margin-bottom: 20px;
     }
-    
+
     .selectbox p.type {
         width: 50px;
         height: 30px;
         line-height: 30px;
         display: inline;
     }
-    
+
     .selectbox select.boardType {
         width: 100px;
         height: 30px;
         margin-left: 10px;
         border-radius: 0;
     }
-    
+
     .selectbox button.write {
         width: 100px;
         float: right;
@@ -2697,27 +2692,28 @@ p.type i.icon{
         border: 1px solid #000;
         transition: background-color 0.3s ease;
     }
-    
+
     .selectbox button.write:hover {
         background-color: #008b42;
         color: #fff;
     }
-    
+
     .board table th {
         text-align: center;
         border-top: 1px solid #ededed;
     }
-    
+
     .board table td {
         border-bottom: 1px solid #ededed;
         padding: 1em;
         box-sizing: border-box;
     }
-    
+
     .boardList {
         text-align: center;
     }
 }
+
 /*------------------------------------ upload end ------------------------------------*/
 
 
@@ -3633,10 +3629,16 @@ table .btn:hover {
 
 
 @media screen and (max-width: 750px) {
-    .sign, .signtitle, .sign .type, .sign .tabbox .tab-tit{
+
+    .sign,
+    .signtitle,
+    .sign .type,
+    .sign .tabbox .tab-tit {
         width: 400px;
     }
-    .sign .write,  table {
+
+    .sign .write,
+    table {
         width: 360px;
     }
 }
