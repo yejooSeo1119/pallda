@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/xeicon.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <title>PALLDA</title>
 </head>
 
@@ -97,169 +97,442 @@
         <!-- header -->
         <div class="mt150"></div>
         <div class="content">
-            <div class="itembox">
-                <div class="imgbox itembox1">
-                    <img src="./iamges/about01.jpg" alt="상품이미지" style="width: 400px; height: 400px;">
+            <div class="content1">
+                <div class="swiper mySwiper leftbox">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./iamges/product01.jpg" alt="thumb1"></div>
+                        <div class="swiper-slide"><img src="./iamges/product02.jpg" alt="thumb2"></div>
+                        <!-- 썸네일 이미지 추가 가능 -->
+                    </div>
+                    <div class="swiper-button-next next"></div>
+                    <div class="swiper-button-prev prev"></div>
+                    <div class="swiper-pagination pagination"></div>
                 </div>
-                <!-- imgbox -->
-                <div class="textbox">
-                    <div class="item1">
-                        <h6>상품명</h6>
-                        <div class="mt20"></div>
-                        <p>상품설명</p>
+                <!-- swiper -->
+                <div class="info rightbox">
+                    <div class="infoTitle">
+                        <h5>more up moisture sun screen</h5>
+                        <small>
+                            more up moisture sun screen
+                        </small>
                     </div>
-                    <!-- item1 -->
-                    <div class="mt20"></div>
-                    <div class="item2">
-                        <p class="profile">
-                            <i class="icon xi-user-o xi-4x"><img src="" alt=""></i>
-                            <!-- 프로필사진 없으면 기본 icon -->
-                        </p>
-                        <div class="mt20"></div>
-                        <p>판매자, 구매자 소개</p>
-                    </div>
-                    <!-- item2 -->
-                    <div class="mt30"></div>
-                    <div class="item3">
-                        <a href="#none" class="addbtn">ADD TO CART</a>
-                        <a href="#none" class="buybtn">BUY NOW</a>
-                    </div>
-                    <!-- item3 -->
-                </div>
-                <!-- textbox -->
-            </div>
-            <!-- itembox1 -->
-            <div class="mt100"></div>
-            <div class="itembox itembox2">
-                <div class="comment">
-                    <div class="comment-box">
-                        <ul class="comment-list">
-                            <li class="comment-item">
-                                <div class="comment-area">
-                                    <div class="comment-text">
-                                        <div class="nick">
-                                            <span class="type">[Buyer]</span>
-                                            <a href="#">홍길동</a>
-                                        </div>
-                                        <!-- nick -->
-                                        <div class="text">
-                                            <p class="text-view">
-                                                <span class="text-comment">
-                                                    댓글내용
-                                                </span>
-                                            </p>
-                                        </div>
-                                        <!-- text -->
-                                        <div class="info">
-                                            <span class="info-date">2022.00.00. 22:22</span>
-                                            <a href="#" role="button" class="info-button">답글쓰기</a>
-                                        </div>
-                                        <!-- info -->
-                                    </div>
-                                </div>
-                                <!-- comment-area -->
-                            </li>
-                            <!-- comment-item -->
-                            <li class="comment-item comment-item-reply">
-                                <div class="comment-area">
-                                    <div class="comment-text">
-                                        <div class="nick">
-                                            <span class="type">[Seller]</span>
-                                            <a href="#">홍길동</a>
-                                        </div>
-                                        <!-- nick -->
-                                        <div class="text">
-                                            <p class="text-view">
-                                                <span class="text-comment">
-                                                    댓글내용
-                                                </span>
-                                            </p>
-                                        </div>
-                                        <!-- text -->
-                                        <div class="info">
-                                            <span class="info-date">2022.00.00. 22:22</span>
-                                            <a href="#" role="button" class="info-button">답글쓰기</a>
-                                        </div>
-                                        <!-- info -->
-                                    </div>
-                                </div>
-                                <!-- comment-area -->
-                            </li>
-                            <!-- comment-item-reply -->
-                            <li class="comment-item">
-                                <div class="comment-area">
-                                    <div class="comment-text">
-                                        <div class="nick">
-                                            <span class="type">[Buyer]</span>
-                                            <a href="#">홍길동</a>
-                                        </div>
-                                        <!-- nick -->
-                                        <div class="text">
-                                            <p class="text-view">
-                                                <span class="text-comment">
-                                                    댓글내용
-                                                </span>
-                                            </p>
-                                        </div>
-                                        <!-- text -->
-                                        <div class="info">
-                                            <span class="info-date">2022.00.00. 22:22</span>
-                                            <a href="#" role="button" class="info-button">답글쓰기</a>
-                                        </div>
-                                        <!-- info -->
-                                    </div>
-                                </div>
-                                <!-- comment-area -->
-                            </li>
-                            <!-- comment-item -->
-                            <li class="comment-item comment-item-reply">
-                                <div class="comment-area">
-                                    <div class="comment-text">
-                                        <div class="nick">
-                                            <span class="type">[Seller]</span>
-                                            <a href="#">홍길동</a>
-                                        </div>
-                                        <!-- nick -->
-                                        <div class="text">
-                                            <p class="text-view">
-                                                <span class="text-comment">
-                                                    댓글내용
-                                                </span>
-                                            </p>
-                                        </div>
-                                        <!-- text -->
-                                        <div class="info">
-                                            <span class="info-date">2022.00.00. 22:22</span>
-                                            <a href="#" role="button" class="info-button">답글쓰기</a>
-                                        </div>
-                                        <!-- info -->
-                                    </div>
-                                </div>
-                                <!-- comment-area -->
-                            </li>
-                            <!-- comment-item-reply -->
-                        </ul>
-                    </div>
-                </div>
-                <!-- comment -->
-                <div class="writer">
-                    <div class="writer-box">
-                        <div class="nick">
-                            <span class="type">[Seller]</span>
-                            <a href="#">홍길동</a>
+                    <!-- 제품명 -->
+                    <div class="mt50"></div>
+                    <div class="infoDetail">
+                        <div class="price">
+                            <div>
+                                <span class="discount">0%</span>
+                                <!-- 가격 할인 -->
+                                <em>45,000</em>
+                                <span class="currency">원</span>
+                                <span class="fixed">
+                                    <del>45,000</del>
+                                    원
+                                </span>
+                                <!-- 가격 할인 -->
+                            </div>
                         </div>
-                        <!-- nick -->
-                        <textarea placeholder="댓글을 작성해주세요."></textarea>
+                        <!-- price -->
+                        <div class="delivery">
+                            <ul>
+                                <li>배송비</li>
+                                <li>
+                                    <span>0 원</span>
+                                    <span>/주문시 결제 (선결제)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- delivery -->
+                        <div class="itemOpt">
+                            <table class="optionBox">
+                                <colgroup>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr class="check optionKey">
+                                        <td>
+                                            <div class="cartCnt">
+                                                <div class="cartName">
+                                                    <span>
+                                                        more up moisture sun screen
+                                                    </span>
+                                                </div>
+                                                <!-- cartName -->
+                                                <div class="countBox">
+                                                    <div>
+                                                        <span class="count">
+                                                            <span class="qty">
+                                                                <span>
+                                                                    <button type="button" class="down"></button>
+                                                                </span>
+                                                                <input type="text" class="qtyCnt">
+                                                                <!-- 수량 -->
+                                                                <span>
+                                                                    <button type="button" class="up"></button>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <!-- countBox -->
+                                            </div>
+                                            <!-- cartCont -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- itemOpt -->
+                        <div class="itemBtnBox">
+                            <div>
+                                <button class="cartBtn">
+                                    장바구니
+                                </button>
+                                <button class="addBtn">
+                                    바로 구매
+                                </button>
+                            </div>
+                        </div>
+                        <!-- itemBtnBox -->
                     </div>
-                    <!-- writer-box -->
-                    <div class="submitbtn">
-                        <a href="#" role="button">등록</a>
-                    </div>
+                    <!-- infoDetail -->
                 </div>
-                <!-- writer -->
+                <!-- info -->
             </div>
-            <!-- itembox2 -->
-
+            <!-- content1 -->
+            <div class="content2">
+                <div class="tabbox">
+                    <ul class="tab-tit">
+                        <li><a href="#" class="on" data-tab="tab1" style="border-right: 1px solid #999;">상품상세정보</a></li>
+                        <li><a href="#" data-tab="tab2" style="border-right: 1px solid #999;"">상품문의  ( 0 )</a></li>
+                        <li><a href=" #" data-tab="tab3">상품후기 ( 0 )</a></li>
+                    </ul>
+                </div>
+                <!-- tabbox -->
+                <div class="type">
+                    <div class="cnt on" id="tab1">
+                        <div class="itembox detail">
+                            <span><img src="./iamges/detail01.png" alt="상품 상세이미지"></span>
+                            <span><img src="./iamges/detail02.png" alt="상품 상세이미지"></span>
+                            <span><img src="./iamges/detail03.png" alt="상품 상세이미지"></span>
+                            <span><img src="./iamges/detail04.png" alt="상품 상세이미지"></span>
+                            <span><img src="./iamges/detail05.png" alt="상품 상세이미지"></span>
+                            <span><img src="./iamges/detail06.png" alt="상품 상세이미지"></span>
+                        </div>
+                    </div>
+                    <!-- tab1 -->
+                    <div class="cnt" id="tab2">
+                        <div class="itembox itembox2">
+                            <div class="comment">
+                                <div class="comment-box">
+                                    <ul class="comment-list">
+                                        <li class="comment-item">
+                                            <div class="comment-area">
+                                                <div class="comment-text">
+                                                    <div class="nick">
+                                                        <span class="type">[Buyer]</span>
+                                                        <a href="#">홍길동</a>
+                                                    </div>
+                                                    <!-- nick -->
+                                                    <div class="text">
+                                                        <p class="text-view">
+                                                            <span class="text-comment">
+                                                                댓글내용
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- text -->
+                                                    <div class="info">
+                                                        <span class="info-date">2022.00.00. 22:22</span>
+                                                        <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    </div>
+                                                    <!-- info -->
+                                                </div>
+                                            </div>
+                                            <!-- comment-area -->
+                                        </li>
+                                        <!-- comment-item -->
+                                        <li class="comment-item comment-item-reply">
+                                            <div class="comment-area">
+                                                <div class="comment-text">
+                                                    <div class="nick">
+                                                        <span class="type">[Seller]</span>
+                                                        <a href="#">홍길동</a>
+                                                    </div>
+                                                    <!-- nick -->
+                                                    <div class="text">
+                                                        <p class="text-view">
+                                                            <span class="text-comment">
+                                                                댓글내용
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- text -->
+                                                    <div class="info">
+                                                        <span class="info-date">2022.00.00. 22:22</span>
+                                                        <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    </div>
+                                                    <!-- info -->
+                                                </div>
+                                            </div>
+                                            <!-- comment-area -->
+                                        </li>
+                                        <!-- comment-item-reply -->
+                                        <li class="comment-item">
+                                            <div class="comment-area">
+                                                <div class="comment-text">
+                                                    <div class="nick">
+                                                        <span class="type">[Buyer]</span>
+                                                        <a href="#">홍길동</a>
+                                                    </div>
+                                                    <!-- nick -->
+                                                    <div class="text">
+                                                        <p class="text-view">
+                                                            <span class="text-comment">
+                                                                댓글내용
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- text -->
+                                                    <div class="info">
+                                                        <span class="info-date">2022.00.00. 22:22</span>
+                                                        <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    </div>
+                                                    <!-- info -->
+                                                </div>
+                                            </div>
+                                            <!-- comment-area -->
+                                        </li>
+                                        <!-- comment-item -->
+                                        <li class="comment-item comment-item-reply">
+                                            <div class="comment-area">
+                                                <div class="comment-text">
+                                                    <div class="nick">
+                                                        <span class="type">[Seller]</span>
+                                                        <a href="#">홍길동</a>
+                                                    </div>
+                                                    <!-- nick -->
+                                                    <div class="text">
+                                                        <p class="text-view">
+                                                            <span class="text-comment">
+                                                                댓글내용
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- text -->
+                                                    <div class="info">
+                                                        <span class="info-date">2022.00.00. 22:22</span>
+                                                        <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    </div>
+                                                    <!-- info -->
+                                                </div>
+                                            </div>
+                                            <!-- comment-area -->
+                                        </li>
+                                        <!-- comment-item-reply -->
+                                        <li class="comment-item">
+                                            <div class="comment-area">
+                                                <div class="comment-text">
+                                                    <div class="nick">
+                                                        <span class="type">[Buyer]</span>
+                                                        <a href="#">홍길동</a>
+                                                    </div>
+                                                    <!-- nick -->
+                                                    <div class="text">
+                                                        <p class="text-view">
+                                                            <span class="text-comment">
+                                                                댓글내용
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- text -->
+                                                    <div class="info">
+                                                        <span class="info-date">2022.00.00. 22:22</span>
+                                                        <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    </div>
+                                                    <!-- info -->
+                                                </div>
+                                            </div>
+                                            <!-- comment-area -->
+                                        </li>
+                                        <!-- comment-item -->
+                                        <li class="comment-item comment-item-reply">
+                                            <div class="comment-area">
+                                                <div class="comment-text">
+                                                    <div class="nick">
+                                                        <span class="type">[Seller]</span>
+                                                        <a href="#">홍길동</a>
+                                                    </div>
+                                                    <!-- nick -->
+                                                    <div class="text">
+                                                        <p class="text-view">
+                                                            <span class="text-comment">
+                                                                댓글내용
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- text -->
+                                                    <div class="info">
+                                                        <span class="info-date">2022.00.00. 22:22</span>
+                                                        <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    </div>
+                                                    <!-- info -->
+                                                </div>
+                                            </div>
+                                            <!-- comment-area -->
+                                        </li>
+                                        <!-- comment-item-reply -->
+                                        <li class="comment-item">
+                                            <div class="comment-area">
+                                                <div class="comment-text">
+                                                    <div class="nick">
+                                                        <span class="type">[Buyer]</span>
+                                                        <a href="#">홍길동</a>
+                                                    </div>
+                                                    <!-- nick -->
+                                                    <div class="text">
+                                                        <p class="text-view">
+                                                            <span class="text-comment">
+                                                                댓글내용
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- text -->
+                                                    <div class="info">
+                                                        <span class="info-date">2022.00.00. 22:22</span>
+                                                        <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    </div>
+                                                    <!-- info -->
+                                                </div>
+                                            </div>
+                                            <!-- comment-area -->
+                                        </li>
+                                        <!-- comment-item -->
+                                        <li class="comment-item comment-item-reply">
+                                            <div class="comment-area">
+                                                <div class="comment-text">
+                                                    <div class="nick">
+                                                        <span class="type">[Seller]</span>
+                                                        <a href="#">홍길동</a>
+                                                    </div>
+                                                    <!-- nick -->
+                                                    <div class="text">
+                                                        <p class="text-view">
+                                                            <span class="text-comment">
+                                                                댓글내용
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- text -->
+                                                    <div class="info">
+                                                        <span class="info-date">2022.00.00. 22:22</span>
+                                                        <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    </div>
+                                                    <!-- info -->
+                                                </div>
+                                            </div>
+                                            <!-- comment-area -->
+                                        </li>
+                                        <!-- comment-item-reply -->
+                                        <li class="comment-item">
+                                            <div class="comment-area">
+                                                <div class="comment-text">
+                                                    <div class="nick">
+                                                        <span class="type">[Buyer]</span>
+                                                        <a href="#">홍길동</a>
+                                                    </div>
+                                                    <!-- nick -->
+                                                    <div class="text">
+                                                        <p class="text-view">
+                                                            <span class="text-comment">
+                                                                댓글내용
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- text -->
+                                                    <div class="info">
+                                                        <span class="info-date">2022.00.00. 22:22</span>
+                                                        <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    </div>
+                                                    <!-- info -->
+                                                </div>
+                                            </div>
+                                            <!-- comment-area -->
+                                        </li>
+                                        <!-- comment-item -->
+                                        <li class="comment-item comment-item-reply">
+                                            <div class="comment-area">
+                                                <div class="comment-text">
+                                                    <div class="nick">
+                                                        <span class="type">[Seller]</span>
+                                                        <a href="#">홍길동</a>
+                                                    </div>
+                                                    <!-- nick -->
+                                                    <div class="text">
+                                                        <p class="text-view">
+                                                            <span class="text-comment">
+                                                                댓글내용
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- text -->
+                                                    <div class="info">
+                                                        <span class="info-date">2022.00.00. 22:22</span>
+                                                        <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    </div>
+                                                    <!-- info -->
+                                                </div>
+                                            </div>
+                                            <!-- comment-area -->
+                                        </li>
+                                        <!-- comment-item-reply -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- comment -->
+                            <div class="mt50"></div>
+                            <div class="paging">
+                                <p>
+                                    <a href="#none" class="fisrt"><i class="icon xi-angle-left"></i></a>
+                                    <a href="#none"><i class="icon xi-angle-left"></i></a>
+                                </p>
+                                <ol>
+                                    <li><a href="buyer.html" class="this">1</a></li>
+                                    <li><a href="#" class="other">2</a></li>
+                                    <li><a href="#" class="other">3</a></li>
+                                    <li><a href="#" class="other">4</a></li>
+                                </ol>
+                                <p>
+                                    <a href="#none" style="padding: 5px 0 0 5px;"><i
+                                            class="icon xi-angle-right"></i></a>
+                                    <a href="#none" class="last"><i class="icon xi-angle-right"></i></a>
+                                </p>
+                            </div>
+                            <!-- paging -->
+                            <div class="mt50"></div>
+                            <div class="writer">
+                                <div class="writer-box">
+                                    <div class="nick">
+                                        <span class="type">[Seller]</span>
+                                        <a href="#">홍길동</a>
+                                    </div>
+                                    <!-- nick -->
+                                    <textarea placeholder="댓글을 작성해주세요."></textarea>
+                                </div>
+                                <!-- writer-box -->
+                                <div class="submitbtn">
+                                    <a href="#" role="button">등록</a>
+                                </div>
+                            </div>
+                            <!-- writer -->
+                        </div>
+                        <!-- itembox2 -->
+                    </div>
+                    <!-- tab2 -->
+                </div>
+                <!-- type -->
+            </div>
+            <!-- itembox -->
         </div>
         <!-- content -->
         <div class="mt150"></div>
@@ -312,6 +585,26 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            speed: 2000,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
+    </script>
 </body>
 
 </html>

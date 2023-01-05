@@ -84,6 +84,10 @@ small {
     font-size: 14px;
 }
 
+em {
+    font-style: normal;
+}
+
 @media (max-width:750px) {
 
     body {
@@ -816,6 +820,7 @@ input[type="button"] {
     .lang-btn i.icon::before {
         content: "\e9d1";
     }
+
     /* menubox */
 
     .menuBtn .open {
@@ -2315,128 +2320,328 @@ footer {
 
 
 /*------------------------------------ detail start ------------------------------------*/
-
-
-.textbox .item3 {
+.content1 {
+    overflow: hidden;
     width: 100%;
-    height: 50px;
-    position: relative;
 }
 
-.textbox .item3 a {
-    display: inline-block;
-    width: 48%;
+/* 스와이퍼 */
+.leftbox {
+    width: 50%;
     height: 100%;
-    line-height: 50px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 150px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 400px;
+    height: 400px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swipe::after {
+    clear: both;
+}
+
+.mySwiper .next,
+.mySwiper .prev {
+    color: #000;
+    scale: 0.7;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.mySwiper .next:hover,
+.mySwiper .prev:hover {
+    opacity: 1;
+}
+
+.mySwiper span.swiper-pagination-bullet {
+    background-color: #191919;
+}
+
+/* 상품정보 */
+.rightbox {
+    width: 35%;
+    margin-left: 5%;
+    float: left;
+}
+
+/* 제품명 */
+.infoTitle {
+    overflow: hidden;
+}
+
+.infoTitle h5 {
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+.infoTitle small {
+    display: block;
+    text-indent: 0.5em;
+    color: #bbb;
+    text-transform: capitalize;
+}
+
+/* 가격,배송 */
+.infoDetail {
+    margin: 35px 0 0;
+    box-sizing: border-box;
+}
+
+.infoDetail .price {
+    padding-top: 50px;
+    border-top: 1px solid #eee;
+}
+
+.infoDetail .price>div {
+    line-height: 1;
+    text-align: right;
+    display: inline-block;
+}
+
+.infoDetail .price .discount {
+    width: 80px;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.infoDetail .price em {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.infoDetail .price .currency {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.infoDetail .price span.fixed {
+    margin-left: 26px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #bbb;
+}
+
+.delivery {
+    padding: 50px 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.delivery ul li {
+    float: left;
+}
+
+.delivery ul li:nth-child(1) {
+    width: 80px;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 300;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+.delivery ul li:nth-child(2) {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 수량 */
+.itemOpt {
+    width: 100%;
+}
+
+.itemOpt {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+}
+
+table.optionBox tr {
+    border-bottom: none;
+}
+
+.itemOpt .cartName {
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.itemOpt .countBox {
+    display: table;
+    width: 100%;
+}
+
+.itemOpt .countBox>div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+span.count {
+    position: relative;
+    display: inline-block;
+    padding-left: 90px;
+}
+
+span.count::before {
+    content: "수량";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 28px;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.itemOpt .countBox span.qty {
+    display: inline;
+    vertical-align: middle;
+}
+
+.itemOpt .countBox span.qty span {
+    float: left;
+}
+
+span.qty span button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dcdcdc;
+    text-indent: -9999px;
+}
+
+button.down {
+    background: url(../iamges/btn-count-down.png) no-repeat center #fff;
+    background-size: 50%;
+}
+
+button.up {
+    background: url(../iamges/btn-count-up.png) no-repeat center #fff;
+    background-size: 50%;
+}
+
+.qty .qtyCnt[type='text'] {
+    float: left;
+    padding: 0 5px;
+    width: 54px;
+    outline: none;
+    height: 30px;
+    border: 1px solid #dcdcdc;
+    border-left: 0;
+    border-right: 0;
+    font-size: 13px;
+    line-height: 30px;
     text-align: center;
     box-sizing: border-box;
 }
 
-.textbox .item3 a:nth-child(1) {
-    margin-right: 2%;
-    background-color: #008b42;
-    border: 0;
-    color: #fff;
+
+/* 버튼 */
+
+.itemBtnBox{
+    padding: 50px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.itemBtnBox button{
+    width: 49.5%;
+    display: inline-block;
+}
+/* 상세페이지 */
+
+#detail-wrap .content2 {
+    display: block;
+    display: block;
+    clear: both;
+    border-top: 2px solid #008b42;
 }
 
-.textbox .item3 a:nth-child(2) {
-    border: 2px solid #008b42;
-    position: absolute;
+.tabbox .tab-tit {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #eee;
 }
 
-@media screen and (min-width: 1200px) {
-
-    #detail-wrap .content .itembox {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    #detail-wrap .content .imgbox {
-        width: 50%;
-        float: left;
-        margin: auto;
-    }
-
-    #detail-wrap .content .textbox {
-        width: 50%;
-        max-width: 600px;
-        float: left;
-    }
-
-    #detail-wrap .textbox .item1,
-    #detail-wrap .textbox .item2 {
-        height: 200px;
-    }
-
-    .textbox .item1 p,
-    .textbox .item2 p {
-        max-height: 150px;
-    }
-
-    #detail-wrap .item2 .profile i {
-        background-color: #ededed;
-        padding: 15px;
-        display: inline-block;
-        box-sizing: border-box;
-        border-radius: 50px;
-    }
+.tabbox .tab-tit li {
+    width: 33.3%;
+    height: 45px;
+    float: left;
+    text-align: center;
+    padding: 3px;
+    box-sizing: border-box;
 }
 
-@media screen and (min-width: 751px) and (max-width: 1199px) {
-    #detail-wrap .content .imgbox {
-        width: 50%;
-        margin: auto;
-        margin-bottom: 50px;
-    }
-
-    #detail-wrap .content .textbox {
-        width: 50%;
-        margin: auto;
-    }
-
-    #detail-wrap .textbox .item1,
-    #detail-wrap .textbox .item2 {
-        width: 100%;
-        max-height: 150px;
-    }
-
-    .textbox .item1 p,
-    .textbox .item2 p {
-        width: 100%;
-        max-height: 150px;
-    }
+.tabbox .tab-tit li a {
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
 }
 
-@media screen and (max-width: 750px) {
-    #detail-wrap .content .itembox1 {
-        width: 400px;
-        overflow: hidden;
-        margin: auto;
-    }
-
-    #detail-wrap .content .imgbox {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 50px;
-    }
-
-    #detail-wrap .content .textbox {
-        width: 100%;
-        margin: auto;
-    }
-
-    #detail-wrap .textbox .item1,
-    #detail-wrap .textbox .item2 {
-        width: 100%;
-        max-height: 150px;
-    }
-
-    .textbox .item1 p,
-    .textbox .item2 p {
-        width: 100%;
-        max-height: 150px;
-    }
+.tabbox .tab-tit li a.on {
+    font-weight: 500;
 }
+
+.type .cnt {
+    width: 100%;
+    max-width: 100%;
+    display: none;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+}
+
+.type .cnt.on {
+    display: block;
+}
+
+.type .detail {
+    object-fit: cover;
+}
+
+.type .detail span img {
+    margin: auto;
+}
+
+
+
 
 /* 댓글 */
 #detail-wrap .itembox2 {
@@ -2444,6 +2649,7 @@ footer {
     padding: 50px;
     box-sizing: border-box;
     font-size: 15px;
+    clear: both;
 }
 
 .comment .comment-box {
@@ -2642,43 +2848,43 @@ footer {
         border-top: 2px solid #1b3745;
         border-bottom: 2px solid #1b3745;
     }
-    
+
     .board table {
-        max-width: 100%;    
+        max-width: 100%;
         width: 400px;
         margin: auto;
         height: 100%;
     }
-    
+
     .board select {
         background-color: transparent;
         border: 0;
     }
-    
+
     .board select option {
         text-align: left;
     }
-    
+
     .selectbox {
         width: 100%;
         display: block;
         margin-bottom: 20px;
     }
-    
+
     .selectbox p.type {
         width: 50px;
         height: 30px;
         line-height: 30px;
         display: inline;
     }
-    
+
     .selectbox select.boardType {
         width: 100px;
         height: 30px;
         margin-left: 10px;
         border-radius: 0;
     }
-    
+
     .selectbox button.write {
         width: 100px;
         float: right;
@@ -2687,27 +2893,28 @@ footer {
         border: 1px solid #000;
         transition: background-color 0.3s ease;
     }
-    
+
     .selectbox button.write:hover {
         background-color: #008b42;
         color: #fff;
     }
-    
+
     .board table th {
         text-align: center;
         border-top: 1px solid #ededed;
     }
-    
+
     .board table td {
         border-bottom: 1px solid #ededed;
         padding: 1em;
         box-sizing: border-box;
     }
-    
+
     .boardList {
         text-align: center;
     }
 }
+
 /*------------------------------------ upload end ------------------------------------*/
 
 
@@ -3639,7 +3846,7 @@ table .btn:hover {
 }
 
 .information span {
-    display: inline--block;
+    display: inline-block;
 }
 
 /*------------------------------------ information end
